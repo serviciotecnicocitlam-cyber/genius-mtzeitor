@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mago</title>
+    <link rel="stylesheet" href="opciones.css">
+    <script src="interes.js" defer></script>
+</head>
+
+<body>
+    <div class="juego">
+        <!-- Pregunta -->
+        <div id="pregunta" class="pregunta"></div>
+
+        <!-- Opciones dinámicas -->
+        <div id="opciones"></div>
+    </div>
+
+    <!-- Botón para cargar nueva pregunta -->
+    <button id="nuevo" onclick="mostrarPregunta()" style="display:none;">Nueva Pregunta</button>
+
+    <video id="videopregunta" muted autoplay playsinbline>
+        <source src="" type="video/mp4" />
+    </video> <video id="videofalse" class="op" style="display:none;" muted>
+        <source src="videos/in.mp4" type="video/mp4" />
+        Tu navegador no soporta video.
+    </video>
+    <video id="videotrue" class="op" style="display:none;" muted>
+        <source src="videos/co.mp4" type="video/mp4" />
+        Tu navegador no soporta video.
+    </video>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+  /* En caso de que el video no cargue inmediatamente */
+}
+
+/* Video de fondo */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  /* ✅ cubre todo el fondo, recorta si es necesario */
+  z-index: -1;
+  /* ✅ queda detrás de todo */
+  opacity: 1;
+  /* podés poner 0.8 si querés un efecto más suave */
+}
+
+.esfera {
+  display: flex;
+  justify-content: center;
+  ;
+}
+.button {
+  /* margin: 19%;
+  left: 36%; */
+  top: 160%;
+  left: 310%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 140, 0, 0.35), rgba(255, 90, 0, 0.15), rgba(0, 0, 0, 0));
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 2px solid rgba(202, 68, 68, 0.2);
+  box-shadow:
+    inset -10px -10px 30px rgba(223, 133, 16, 0.2),
+    inset 10px 10px 30px rgba(255, 0, 0, 0.2),
+    0 0 20px rgba(255, 120, 0, 0.4),
+    0 0 40px rgba(255, 60, 0, 0.7);
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  line-height: 150px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: flame 4s infinite linear alternate;
+}
+
+@keyframes flame {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  width: 40px;
+  height: 20px;
+  background: rgba(109, 103, 103, 0.1);
+  border-radius: 50%;
+  transform: rotate(-20deg);
+  pointer-events: none;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow:
+    inset -10px -10px 30px rgba(255, 255, 255, 0.2),
+    inset 10px 10px 30px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(255, 120, 0, 0.6),
+    0 0 60px rgba(255, 80, 0, 0.4);
+}
+
