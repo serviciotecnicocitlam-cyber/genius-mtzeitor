@@ -1,0 +1,168 @@
+/* Reset y estructura */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Georgia', serif;
+    overflow: hidden;
+
+    /* Fondo del mago */
+    background-image: url('global/imagenes/mago.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor principal con columnas */
+.layout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+/* Columnas de botones */
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    z-index: 2;
+}
+
+.left {
+    align-items: flex-end;
+}
+
+.right {
+    align-items: flex-start;
+}
+
+/* Espacio central (visual) */
+.center-space {
+    width: 40%;
+    height: 100%;
+}
+
+/* Botones tipo libro mágico */
+.book-button {
+    position: relative;
+    width: 160px;
+    height: 70px;
+    padding-left: 25px;
+    /* espacio para el lomo */
+    background-color: #2b1a14;
+    /* azul oscuro, combina con el fondo */
+    color: #e0e0e0;
+    /* texto claro */
+    border-radius: 8px;
+    border: 1px solid #444a6e;
+    /* borde sutil */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    animation: floatMove 4s ease-in-out infinite;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(90deg,#705146, #45271d);
+    /* lomo gris metálico */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: inset 2px 0 5px   rgba(43, 26, 20, 1);;
+}
+
+/* Hover para dar efecto brillante */
+.book-button:hover {
+    background-color: #2a2e58;
+    box-shadow: 0 0 15px #5e6db3;
+    color: #f0f0f0;
+}
+
+.btn1 {
+    animation-name: floatMove;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    left: 30%;
+}
+
+.btn2 {
+    animation-name: floatMove;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+.btn3 {
+    animation-name: floatMove;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.btn4 {
+    animation-name: floatMove;
+    animation-duration: 2s;
+    animation-delay: 1.3s;
+    left: 30%;
+}
+
+.btn5 {
+    animation-name: floatMove;
+    animation-duration: 2s;
+    animation-delay: 0.8s;
+    right: 30%;
+}
+
+.btn6 {
+    animation-name: floatMove;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+}
+
+.btn7 {
+    animation-name: floatMove;
+    animation-duration: 2s;
+    animation-delay: 0.9s;
+}
+
+.btn8 {
+    animation-name: floatMove;
+    animation-duration: 2s;
+    animation-delay: 1.1s;
+    right: 30%;
+}
+
+@keyframes floatMove {
+    0% {
+        transform: translateY(0) translateX(0);
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    50% {
+        transform: translateY(-8px) translateX(4px);
+        box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.9);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+}

@@ -30,13 +30,10 @@ video {
 .esfera {
   display: flex;
   justify-content: center;
-  ;
 }
-.button {
-  /* margin: 19%;
-  left: 36%; */
-  top: 160%;
-  left: 310%;
+#button {
+  margin: 19%;
+  left: 36%;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -71,7 +68,7 @@ video {
   }
 }
 
-.button::before {
+#button::before {
   content: '';
   position: absolute;
   top: 25px;
@@ -84,7 +81,7 @@ video {
   pointer-events: none;
 }
 
-.button::after {
+#button::after {
   content: '';
   position: absolute;
   bottom: 15px;
@@ -97,7 +94,7 @@ video {
   pointer-events: none;
 }
 
-.button:hover {
+#button:hover {
   transform: scale(1.05);
   box-shadow:
     inset -10px -10px 30px rgba(255, 255, 255, 0.2),
