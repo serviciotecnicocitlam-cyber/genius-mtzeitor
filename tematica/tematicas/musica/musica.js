@@ -18,7 +18,7 @@ const preguntas = {
         { "opciones": ["a) Virus", "b) Soda Stereo", "c) Los Enanitos Verdes"], "respuesta": "b", "video": "videos/23.mp4" },
         { "opciones": ["a) León Gieco", "b) Luis Alberto Spinetta", "c) Fito Páez"], "respuesta": "c", "video": "videos/.mp4" },
         { "opciones": ["a) Pappo", "b) Skay Beilinson", "c) Ricardo Iorio"], "respuesta": "a", "video": "videos/inter6.mp4" },
-        { "opciones": ["a) Soda Stereo", "b) Patricio Rey y sus Redonditos de Ricota", "c) Los Ratones Paranoicos"], "respuesta": "a", "video": "videos/39.mp4" },
+        { "opciones": ["a) Soda Stereo", "b) Patricio Rey y sus Redonditos de Ricota", "c) Los Ratones Paranoicos"], "respuesta": "a", "video": "videos/.mp4" },
         { "opciones": ["a) Federico Páez", "b) Rodolfo Páez", "c) Ricardo Páez"], "respuesta": "b", "video": "videos/inter8.mp4" },
         { "opciones": ["a) Andrés Calamaro", "b) León Gieco", "c) Charly García"], "respuesta": "a", "video": "videos/inter9.mp4" },
         { "opciones": ["a) Patricio Rey y sus Redonditos de Ricota", "b) Rata Blanca", "c) Bersuit Vergarabat"], "respuesta": "a", "video": "videos/inter10.mp4" }
@@ -29,7 +29,7 @@ const preguntas = {
         { "opciones": ["a) Ecko", "b) L-Gante", "c) Bizarrap"], "respuesta": "b", "video": "videos/dificil3.mp4" },
         { "opciones": ["a) David LC", "b) Walter 'Pocho' Calderón", "c) El Dipy"], "respuesta": "b", "video": "videos/43.mp4" },
         { "opciones": ["a) Lit Killah", "b) Bizarrap", "c) Ecko"], "respuesta": "b", "video": "videos/40.mp4" },
-        { "opciones": ["a) L-Gante", "b) KHEA", "c) Ecko"], "respuesta": "a", "video": "videos/42.mp4" },
+        { "opciones": ["a) L-Gante", "b) KHEA", "c) Ecko"], "respuesta": "a", "video": "videos/.mp4" },
         { "opciones": ["a) Trueno", "b) Ysy A", "c) Duki"], "respuesta": "b", "video": "videos/dificil7.mp4" },
         { "opciones": ["a) C.R.O", "b) Lit Killah", "c) KHEA"], "respuesta": "a", "video": "videos/dificil8.mp4" },
         { "opciones": ["a) L-Gante", "b) Bizarrap", "c) Duki"], "respuesta": "a", "video": "videos/44.mp4" },

@@ -17,7 +17,7 @@ const preguntas = {
     { "opciones": ["a) Una vasta llanura que abarca partes de Argentina, Bolivia y Paraguay", "b) Un desierto en el noroeste de Argentina", "c) Una zona costera en el noreste de Argentina"], "respuesta": "a", "video": "videos/11.mp4" },
     { "opciones": ["a) 2", "b) 3", "c) 4"], "respuesta": "b", "video": "videos/2gf.mp4" },
     { "opciones": ["a) Lago Buenos Aires", "b) Lago Nahuel Huapi", "c) Lago Argentino"], "respuesta": "c", "video": "videos/3gf.mp4" },
-    { "opciones": ["a) González Catán", "b) Ramos Mejía", "c) Avellaneda"], "respuesta": "c", "video": "videos/5gf.mp4" },
+    { "opciones": ["a) González Catán", "b) Ramos Mejía", "c) Avellaneda"], "respuesta": "c", "video": "videos/.mp4" },
     { "opciones": ["a) San Justo", "b) Isidro Casanova", "c) Laferrere"], "respuesta": "a", "video": "videos/6gf.mp4" }
   ]
 };
