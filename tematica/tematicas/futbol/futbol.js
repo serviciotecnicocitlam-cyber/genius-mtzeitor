@@ -5,11 +5,11 @@ const preguntas = {
         { "opciones": ["a) Jorge Valdano", "b) Daniel Passarella", "c) Diego Maradona"], "respuesta": "c", "video": "videos/3.mp4" },//revisado
         { "opciones": ["a) Suecia", "b) Inglaterra", "c) Nigeria"], "respuesta": "a", "video": "videos/4.mp4" },//revisado
         { "opciones": ["a) Gonzalo Higuaín", "b) Lionel Messi", "c) Ezequiel Lavezzi"], "respuesta": "b", "video": "videos/5.mp4" },//revisado
-        { "opciones": ["a) Julián Álvarez", "b) Lionel Messi", "c) Ángel Di María"], "respuesta": "c", "video": "videos/.mp4" },                    //falta video
-        { "opciones": ["a) ", "b) ", "c) "], "respuesta": "b", "video": "videos/.mp4" },                                                           //falta video y preguntas
-        { "opciones": ["a) Franco Armani", "b) Emiliano 'Dibu' Martínez", "c) Sergio Romero"], "respuesta": "b", "video": "videos/.mp4" },        //falta video
-        { "opciones": ["a) Lautaro Martínez", "b) Julián Álvarez", "c) Rodrigo De Paul"], "respuesta": "b", "video": "videos/.mp4" },             //falta video
-        { "opciones": ["a) César Luis Menotti", "b) Carlos Salvador Bilardo", "c) Marcelo Bielsa"], "respuesta": "a", "video": "videos/.mp4" }   //falta video
+        //{ "opciones": ["a) Julián Álvarez", "b) Lionel Messi", "c) Ángel Di María"], "respuesta": "c", "video": "videos/.mp4" },                    //falta video
+        //{ "opciones": ["a) ", "b) ", "c) "], "respuesta": "b", "video": "videos/.mp4" },                                                           //falta video y preguntas
+        //{ "opciones": ["a) Franco Armani", "b) Emiliano 'Dibu' Martínez", "c) Sergio Romero"], "respuesta": "b", "video": "videos/.mp4" },        //falta video
+        //{ "opciones": ["a) Lautaro Martínez", "b) Julián Álvarez", "c) Rodrigo De Paul"], "respuesta": "b", "video": "videos/.mp4" },             //falta video
+        //{ "opciones": ["a) César Luis Menotti", "b) Carlos Salvador Bilardo", "c) Marcelo Bielsa"], "respuesta": "a", "video": "videos/.mp4" }   //falta video
     ],
     "INTERMEDIAS": [
         { "opciones": ["a) Boca Juniors", "b) Fluminense", "c) Palmeiras"], "respuesta": "b", "video": "videos/6.mp4" },//revisado
