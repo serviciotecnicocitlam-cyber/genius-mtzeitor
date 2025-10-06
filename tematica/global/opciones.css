@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("imagenes/mago.png") no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;

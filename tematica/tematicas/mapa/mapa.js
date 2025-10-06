@@ -1,11 +1,11 @@
 const preguntas = {
     "FACILES": [
-        { "opciones": ["a) Ramos Mejía", "b) Lomas del Mirador", "c) San Justo"], "respuesta": "a", "video": "videos/1mp.jpg" },
-        { "opciones": ["a) Tapiales", "b) Lomas del Mirador", "c) Villa Luzuriaga"], "respuesta": "b", "imagen": "imagenes/mago.jpeg" },
-        { "opciones": ["a) La Tablada", "b) Ciudad Evita", "c) Villa Madero"], "respuesta": "a", "imagen": "imagenes/mago.jpeg" },
-        { "opciones": ["a) Villa Celina", "b) Tapiales", "c) Villa Madero"], "respuesta": "c", "imagen": "imagenes/mago.jpeg" },
-        { "opciones": ["a) Ciudad Evita", "b) Villa Madero", "c) Villa Celina"], "respuesta": "c", "imagen": "imagenes/mago.jpeg" },
-        { "opciones": ["a) Aldo Bonzi", "b) Tapiales", "c) Lomas del Mirador"], "respuesta": "b", "imagen": "imagenes/mago.jpeg" }
+        { "opciones": ["a) Ramos Mejía", "b) Lomas del Mirador", "c) San Justo"], "respuesta": "a", "imagen": "imagnes/ma.png" },
+        { "opciones": ["a) Tapiales", "b) Lomas del Mirador", "c) Villa Luzuriaga"], "respuesta": "b", "imagen": "imagenes/mago.png" },
+        { "opciones": ["a) La Tablada", "b) Ciudad Evita", "c) Villa Madero"], "respuesta": "a", "imagen": "imagenes/mago.png" },
+        { "opciones": ["a) Villa Celina", "b) Tapiales", "c) Villa Madero"], "respuesta": "c", "imagen": "imagenes/mago.png" },
+        { "opciones": ["a) Ciudad Evita", "b) Villa Madero", "c) Villa Celina"], "respuesta": "c", "imagen": "imagenes/mago.png" },
+        { "opciones": ["a) Aldo Bonzi", "b) Tapiales", "c) Lomas del Mirador"], "respuesta": "b", "imagen": "imagenes/mago.png" }
     ],
     "INTERMEDIAS": [
         { "opciones": ["a) Aldo Bonzi", "b) La Tablada", "c) Villa Luzuriaga"], "respuesta": "a", "imagen": "imagenes/inter1.jpg" },
@@ -24,50 +24,84 @@ const preguntas = {
 };
 
 
+let contadorPreguntas = 0;
+let aciertos = 0;
+const videoPregunta = document.getElementById('videopregunta')
+const imgPregunta = document.getElementById('imgpregunta');
 const videofalse = document.getElementById('videofalse');
 const videotrue = document.getElementById('videotrue');
-const siguiente = document.getElementById('nuevo');
-mostrarPregunta()
+
+let preguntaActual = null;
+
+mostrarPregunta();
+
 function mostrarPregunta() {
-    const categorias = Object.keys(preguntas);
-    const categoria = categorias[Math.floor(Math.random() * categorias.length)];
-    const lista = preguntas[categoria];
+  const categorias = Object.keys(preguntas);
+  const categoria = categorias[Math.floor(Math.random() * categorias.length)];
+  const lista = preguntas[categoria];
+  preguntaActual = lista[Math.floor(Math.random() * lista.length)];
 
-    const pregunta = lista[Math.floor(Math.random() * lista.length)];
+  const opcionesDiv = document.getElementById("opciones");
+  opcionesDiv.innerHTML = "";
 
+  const posiciones = ["opcion-izquierda", "opcion-derecha", "opcion-abajo"];
+  preguntaActual.opciones.forEach((opcion, index) => {
+    const btn = document.createElement("button");
+    btn.classList.add("opcion", posiciones[index]);
+    btn.innerText = opcion;
+    btn.onclick = () => verificarRespuesta(opcion[0], preguntaActual.respuesta);
+    opcionesDiv.appendChild(btn);
+  });
 
-    const opcionesDiv = document.getElementById("opciones");
-    opcionesDiv.innerHTML = "";
+  // Mostrar imagen de la pregunta
+  imgPregunta.src = preguntaActual.imagen;
+  imgPregunta.style.display = 'block';
 
-    const posiciones = ["opcion-izquierda", "opcion-derecha", "opcion-abajo"];
-    pregunta.opciones.forEach((opcion, index) => {
-        const btn = document.createElement("button");
-        btn.classList.add("opcion", posiciones[index]);
-        btn.innerText = opcion;
-        btn.onclick = () => verificarRespuesta(opcion[0], pregunta.respuesta);
-        opcionesDiv.appendChild(btn);
-    });
-    const imgPregunta = document.getElementById("imgpregunta");
-    imgPregunta.src = pregunta.imagen;
+  // Ocultar feedback videos (por si estaban visibles de antes)
+  videotrue.style.display = 'none';
+  videofalse.style.display = 'none';
+  videotrue.pause();
+  videofalse.pause();
+  videotrue.currentTime = 0;
+  videofalse.currentTime = 0;
 }
+
 function verificarRespuesta(opcion, correcta) {
-  if (opcion === correcta) {
+  // Desactivar botones mientras se reproduce el video de respuesta
+  const botones = document.querySelectorAll(".opcion");
+  botones.forEach(btn => btn.disabled = true);
+
+  // Ocultar imagen de la pregunta
+  imgPregunta.style.display = 'none';
+
+  const esCorrecta = opcion === correcta;
+
+  if (esCorrecta) {
+    aciertos++;
     videotrue.style.zIndex = '5';
     videotrue.style.display = 'block';
+    videotrue.currentTime = 0;
     videotrue.play();
-    // Cuando termine muestra el boton de siguiente
     videotrue.onended = () => {
-      videotrue.style.display = 'none';
-      mostrarPregunta()
+      manejarSiguientePaso();
     };
   } else {
     videofalse.style.zIndex = '5';
     videofalse.style.display = 'block';
+    videofalse.currentTime = 0;
     videofalse.play();
-    // Cuando termine muestra el boton de siguiente
     videofalse.onended = () => {
-      videofalse.style.display = 'none';
-      mostrarPregunta()
-    }
+      manejarSiguientePaso();
+    };
+  }
+
+  contadorPreguntas++;
+}
+
+function manejarSiguientePaso() {
+  if (contadorPreguntas >= 6) {
+    window.location.href = `../../global/resultado.html?aciertos=${aciertos}&total=${contadorPreguntas}`;
+  } else {
+    mostrarPregunta();
   }
 }

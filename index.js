@@ -1,6 +1,7 @@
 const button = document.getElementById("button");
 const video = document.getElementById("videointro");
 const videoespera = document.getElementById("videoespera")
+video.pause();
 
 button.addEventListener("click", () => {
     // Ocultar botón y fondo

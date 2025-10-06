@@ -37,50 +37,85 @@ const preguntas = {
     ]
 };
 
+let contadorPreguntas = 0;
+let aciertos = 0;
+const videoPregunta = document.getElementById('videopregunta')
 const videofalse = document.getElementById('videofalse');
 const videotrue = document.getElementById('videotrue');
-const siguiente = document.getElementById('nuevo');
-mostrarPregunta()
+
+let preguntaActual = null;
+
+mostrarPregunta();
+
 function mostrarPregunta() {
-    const categorias = Object.keys(preguntas);
-    const categoria = categorias[Math.floor(Math.random() * categorias.length)];
-    const lista = preguntas[categoria];
+  const categorias = Object.keys(preguntas);
+  const categoria = categorias[Math.floor(Math.random() * categorias.length)];
+  const lista = preguntas[categoria];
+  preguntaActual = lista[Math.floor(Math.random() * lista.length)];
 
-    const pregunta = lista[Math.floor(Math.random() * lista.length)];
-    const opcionesDiv = document.getElementById("opciones");
-    opcionesDiv.innerHTML = "";
+  const opcionesDiv = document.getElementById("opciones");
+  opcionesDiv.innerHTML = "";
 
-    const posiciones = ["opcion-izquierda", "opcion-derecha", "opcion-abajo"];
-    pregunta.opciones.forEach((opcion, index) => {
-        const btn = document.createElement("button");
-        btn.classList.add("opcion", posiciones[index]);
-        btn.innerText = opcion;
-        btn.onclick = () => verificarRespuesta(opcion[0], pregunta.respuesta);
-        opcionesDiv.appendChild(btn);
-    });
-    const videoPregunta = document.getElementById("videopregunta");
-    videoPregunta.innerHTML = `<source src="${pregunta.video}" type="video/mp4">`;
-    videoPregunta.load();
-    videoPregunta.play();
+  const posiciones = ["opcion-izquierda", "opcion-derecha", "opcion-abajo"];
+  preguntaActual.opciones.forEach((opcion, index) => {
+    const btn = document.createElement("button");
+    btn.classList.add("opcion", posiciones[index]);
+    btn.innerText = opcion;
+    btn.onclick = () => verificarRespuesta(opcion[0], preguntaActual.respuesta);
+    opcionesDiv.appendChild(btn);
+  });
+
+  const videoPregunta = document.getElementById("videopregunta");
+  videoPregunta.innerHTML = `<source src="${preguntaActual.video}" type="video/mp4">`;
+  videoPregunta.style.display = 'block';
+  videoPregunta.load();
+  videoPregunta.play();
 }
+
 function verificarRespuesta(opcion, correcta) {
-  if (opcion === correcta) {
+  // Desactivar botones mientras se reproduce video
+  const botones = document.querySelectorAll(".opcion");
+  botones.forEach(btn => btn.disabled = true);
+
+  // ✅ DETENER video de la pregunta inmediatamente
+  videoPregunta.pause();
+  videoPregunta.currentTime = 0;
+  videoPregunta.style.display = 'none';
+
+  const esCorrecta = opcion === correcta;
+
+  if (esCorrecta) {
+     aciertos++;
     videotrue.style.zIndex = '5';
     videotrue.style.display = 'block';
+    videotrue.currentTime = 0;
     videotrue.play();
-    // Cuando termine muestra el boton de siguiente
     videotrue.onended = () => {
-      videotrue.style.display = 'none';
-      mostrarPregunta()
+      manejarSiguientePaso();
     };
   } else {
     videofalse.style.zIndex = '5';
     videofalse.style.display = 'block';
+    videofalse.currentTime = 0;
     videofalse.play();
-    // Cuando termine muestra el boton de siguiente
     videofalse.onended = () => {
-      videofalse.style.display = 'none';
-      mostrarPregunta()
-    }
+      manejarSiguientePaso();
+    };
+  }
+
+  contadorPreguntas++;
+}
+
+
+function manejarSiguientePaso() {
+  // Ver si fue la última pregunta
+  if (contadorPreguntas >= 6) {
+    window.location.href = `../../global/resultado.html?aciertos=${aciertos}&total=${contadorPreguntas}`;
+  } else {
+    // Mostrar botón de siguiente pregunta
+    videofalse.style.display = 'none';
+    videotrue.style.display = 'none';
+    mostrarPregunta()
   }
 }
+

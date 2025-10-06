@@ -37,7 +37,7 @@ body {
     width: 200px;
     height: 200px;
     position: absolute;
-    top: 55%;
+    top: 45%;
     /* lo pone debajo del texto */
     left: 50%;
     transform: translate(-50%, 0);

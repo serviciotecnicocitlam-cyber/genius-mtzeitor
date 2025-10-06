@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Resultados</title>
@@ -20,8 +19,7 @@
 
         .contenedor-pergamino {
             position: absolute;
-            top:70%;
-            /* Puedes ajustar esto según tu imagen */
+            top: 70%;
             left: 50%;
             transform: translate(-50%, -50%) scaleX(0);
             animation: desenrollarHorizontal 1.2s ease-out forwards;
@@ -40,7 +38,6 @@
                 opacity: 1;
             }
         }
-
 
         .pergamino {
             width: 600px;
@@ -73,9 +70,25 @@
             color: darkred;
             font-weight: bold;
         }
+
+        #btnReiniciar {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: 'Georgia', serif;
+            background-color: #d4af37;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            transition: opacity 0.5s;
+        }
+
+        #btnReiniciar:hover {
+            background-color: #c49b2d;
+        }
     </style>
 </head>
-
 <body>
 
     <div class="contenedor-pergamino">
@@ -84,6 +97,8 @@
                 <h1>Resultados</h1>
                 <p id="puntaje">Preguntas acertadas:</p>
                 <p id="mensajeFinal" class="ganaste"></p>
+                <!-- Botón de reinicio -->
+                <button id="btnReiniciar" onclick="reiniciarJuego()">Reiniciar Juego</button>
             </div>
         </div>
     </div>
@@ -106,8 +121,17 @@
             mensajeFinal.textContent = "❌ Perdiste. ¡Gracias por participar!";
             mensajeFinal.classList.add("perdiste");
         }
+
+        // Mostrar el botón de reinicio después de 5 segundos
+        setTimeout(() => {
+            document.getElementById("btnReiniciar").style.display = 'inline-block';
+        }, 2000);
+
+        // Función para redirigir a la página principal
+        function reiniciarJuego() {
+            window.location.href = "../../index.html"; // Cambia esto según el nombre de tu archivo principal
+        }
     </script>
 
 </body>
-
 </html>

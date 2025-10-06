@@ -38,10 +38,9 @@ const preguntas = {
 };
 let contadorPreguntas = 0;
 let aciertos = 0;
-
+const videoPregunta = document.getElementById('videopregunta')
 const videofalse = document.getElementById('videofalse');
 const videotrue = document.getElementById('videotrue');
-const siguiente = document.getElementById('nuevo');
 
 let preguntaActual = null;
 
@@ -67,6 +66,7 @@ function mostrarPregunta() {
 
     const videoPregunta = document.getElementById("videopregunta");
     videoPregunta.innerHTML = `<source src="${preguntaActual.video}" type="video/mp4">`;
+    videoPregunta.style.display = 'block';
     videoPregunta.load();
     videoPregunta.play();
 }
@@ -76,11 +76,18 @@ function verificarRespuesta(opcion, correcta) {
     const botones = document.querySelectorAll(".opcion");
     botones.forEach(btn => btn.disabled = true);
 
+    // ✅ DETENER video de la pregunta inmediatamente
+    videoPregunta.pause();
+    videoPregunta.currentTime = 0;
+    videoPregunta.style.display = 'none';
+
     const esCorrecta = opcion === correcta;
+
     if (esCorrecta) {
         aciertos++;
         videotrue.style.zIndex = '5';
         videotrue.style.display = 'block';
+        videotrue.currentTime = 0;
         videotrue.play();
         videotrue.onended = () => {
             manejarSiguientePaso();
@@ -88,14 +95,16 @@ function verificarRespuesta(opcion, correcta) {
     } else {
         videofalse.style.zIndex = '5';
         videofalse.style.display = 'block';
+        videofalse.currentTime = 0;
         videofalse.play();
         videofalse.onended = () => {
             manejarSiguientePaso();
         };
     }
 
-    contadorPreguntas++; // ✅ Ahora se cuenta al responder
+    contadorPreguntas++;
 }
+
 
 function manejarSiguientePaso() {
     // Ver si fue la última pregunta
@@ -108,4 +117,3 @@ function manejarSiguientePaso() {
         mostrarPregunta()
     }
 }
-
