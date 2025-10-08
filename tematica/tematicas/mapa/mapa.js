@@ -1,3 +1,4 @@
+                                                          //FALTAN PONER TODOS LOS VIDEOS Y ASIGNAR FOTOS QUE ESTAN EN LA CARPETA
 const preguntas = {
     "FACILES": [
         { "opciones": ["a) Ramos Mejía", "b) Lomas del Mirador", "c) San Justo"], "respuesta": "a", "imagen": "imagnes/ma.png" },

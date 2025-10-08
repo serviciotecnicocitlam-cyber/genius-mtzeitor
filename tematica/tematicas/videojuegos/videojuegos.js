@@ -1,3 +1,5 @@
+                                                                        //FALTAN VIDEOS Y ASIGNACIONES CORRECTAS
+
 const preguntas = {
     "FACILES": [
         { "opciones": ["a) Fortnite", "b) Call of Duty: Modern Warfare", "c) Apex Legends"], "respuesta": "a", "video": "videos/1.mp4" },

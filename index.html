@@ -14,7 +14,7 @@
         <source src="espera.mp4" type="video/mp4">
         Tu navegador no soporta este video.
     </video>
-    <video autoplay id="videointro"  style="display: none;" >
+    <video autoplay muted id="videointro"  style="display: none;" >
         <source src="videopresentacion.mp4" type="video/mp4">
         Tu navegador no soporta este video.
     </video>
@@ -22,8 +22,20 @@
     <button id="button">¿Quieres jugar?</button>
     </div>
     <script>
+const boton = document.getElementById("button");
+const intro = document.getElementById("videointro");
+const espera = document.getElementById("videoespera");
 
-    </script>
+boton.addEventListener("click", () => {
+    // Oculta el video de espera y muestra el de introducción
+    espera.style.display = "none";
+    intro.style.display = "block";
+
+    // Reproduce el video con sonido
+    intro.muted = false;
+    intro.play().catch(err => console.warn("No se pudo reproducir:", err));
+});
+</script>
 </body>
 
 </html>

@@ -16,22 +16,22 @@ const preguntas = {
         { "opciones": ["a) Los Fabulosos Cadillacs", "b) Patricio Rey y sus Redondito de Ricota", "c) Rata Blanca"], "respuesta": "b", "video": "videos/12.mp4" },
         { "opciones": ["a) Carlos Alberto García", "b) Carlos Alberto Gómez", "c) Carlos Alberto García Moreno"], "respuesta": "a", "video": "videos/22.mp4" },
         { "opciones": ["a) Virus", "b) Soda Stereo", "c) Los Enanitos Verdes"], "respuesta": "b", "video": "videos/23.mp4" },
-        { "opciones": ["a) León Gieco", "b) Luis Alberto Spinetta", "c) Fito Páez"], "respuesta": "c", "video": "videos/.mp4" },
-        { "opciones": ["a) Pappo", "b) Skay Beilinson", "c) Ricardo Iorio"], "respuesta": "a", "video": "videos/inter6.mp4" },
-        { "opciones": ["a) Soda Stereo", "b) Patricio Rey y sus Redonditos de Ricota", "c) Los Ratones Paranoicos"], "respuesta": "a", "video": "videos/.mp4" },
-        { "opciones": ["a) Federico Páez", "b) Rodolfo Páez", "c) Ricardo Páez"], "respuesta": "b", "video": "videos/inter8.mp4" },
-        { "opciones": ["a) Andrés Calamaro", "b) León Gieco", "c) Charly García"], "respuesta": "a", "video": "videos/inter9.mp4" },
-        { "opciones": ["a) Patricio Rey y sus Redonditos de Ricota", "b) Rata Blanca", "c) Bersuit Vergarabat"], "respuesta": "a", "video": "videos/inter10.mp4" }
+       // { "opciones": ["a) León Gieco", "b) Luis Alberto Spinetta", "c) Fito Páez"], "respuesta": "c", "video": "videos/.mp4" },//falta video
+      //  { "opciones": ["a) Pappo", "b) Skay Beilinson", "c) Ricardo Iorio"], "respuesta": "a", "video": "videos/inter6.mp4" },//falta video
+      //  { "opciones": ["a) Soda Stereo", "b) Patricio Rey y sus Redonditos de Ricota", "c) Los Ratones Paranoicos"], "respuesta": "a", "video": "videos/.mp4" },
+      //  { "opciones": ["a) Federico Páez", "b) Rodolfo Páez", "c) Ricardo Páez"], "respuesta": "b", "video": "videos/inter8.mp4" },
+      //  { "opciones": ["a) Andrés Calamaro", "b) León Gieco", "c) Charly García"], "respuesta": "a", "video": "videos/inter9.mp4" },
+      //  { "opciones": ["a) Patricio Rey y sus Redonditos de Ricota", "b) Rata Blanca", "c) Bersuit Vergarabat"], "respuesta": "a", "video": "videos/inter10.mp4" }
     ],
     "DIFICILES": [
-        { "opciones": ["a) Ramos Mejía", "b) González Catán", "c) Isidro Casanova"], "respuesta": "b", "video": "videos/dificil1.mp4" },
-        { "opciones": ["a) Bizarrap", "b) Wos", "c) Ecko"], "respuesta": "c", "video": "videos/dificil2.mp4" },
-        { "opciones": ["a) Ecko", "b) L-Gante", "c) Bizarrap"], "respuesta": "b", "video": "videos/dificil3.mp4" },
+      //  { "opciones": ["a) Ramos Mejía", "b) González Catán", "c) Isidro Casanova"], "respuesta": "b", "video": "videos/dificil1.mp4" },
+      //  { "opciones": ["a) Bizarrap", "b) Wos", "c) Ecko"], "respuesta": "c", "video": "videos/dificil2.mp4" },
+      //  { "opciones": ["a) Ecko", "b) L-Gante", "c) Bizarrap"], "respuesta": "b", "video": "videos/dificil3.mp4" },
         { "opciones": ["a) David LC", "b) Walter 'Pocho' Calderón", "c) El Dipy"], "respuesta": "b", "video": "videos/43.mp4" },
         { "opciones": ["a) Lit Killah", "b) Bizarrap", "c) Ecko"], "respuesta": "b", "video": "videos/40.mp4" },
-        { "opciones": ["a) L-Gante", "b) KHEA", "c) Ecko"], "respuesta": "a", "video": "videos/.mp4" },
-        { "opciones": ["a) Trueno", "b) Ysy A", "c) Duki"], "respuesta": "b", "video": "videos/dificil7.mp4" },
-        { "opciones": ["a) C.R.O", "b) Lit Killah", "c) KHEA"], "respuesta": "a", "video": "videos/dificil8.mp4" },
+      //  { "opciones": ["a) L-Gante", "b) KHEA", "c) Ecko"], "respuesta": "a", "video": "videos/.mp4" },
+      //  { "opciones": ["a) Trueno", "b) Ysy A", "c) Duki"], "respuesta": "b", "video": "videos/dificil7.mp4" },
+      //  { "opciones": ["a) C.R.O", "b) Lit Killah", "c) KHEA"], "respuesta": "a", "video": "videos/dificil8.mp4" },
         { "opciones": ["a) L-Gante", "b) Bizarrap", "c) Duki"], "respuesta": "a", "video": "videos/44.mp4" },
         { "opciones": ["a) Ecko", "b) Bizarrap", "c) L-Gante"], "respuesta": "b", "video": "videos/45.mp4" }
     ]
