@@ -2,11 +2,11 @@
 
 const preguntas = {
   "FACILES": [
-    { "opciones": ["a) Mendoza", "b) Tierra del Fuego", "c) Santa Cruz"], "respuesta": "b", "video": "videos/1.mp4" },
-    { "opciones": ["a) Tucumán", "b) Jujuy", "c) La Pampa"], "respuesta": "b", "video": "videos/2.mp4" },
+    { "opciones": ["a) Mendoza", "b) Tierra del Fuego", "c) Santa Cruz"], "respuesta": "b", "video": "videos/1gf.mp4" },
+    { "opciones": ["a) Tucumán", "b) Jujuy", "c) La Pampa"], "respuesta": "b", "video": "videos/2gf.mp4" },
 //    { "opciones": ["a) Mendoza", "b) Salta", "c) Entre Ríos"], "respuesta": "a", "video": "videos/3.mp4" },
-    { "opciones": ["a) 20", "b) 23", "c) 24"], "respuesta": "c", "video": "videos/4.mp4" },
-    { "opciones": ["a) San Luis", "b) Córdoba", "c) La Rioja"], "respuesta": "b", "video": "videos/5.mp4" }
+    { "opciones": ["a) 20", "b) 23", "c) 24"], "respuesta": "c", "video": "videos/4gf.mp4" },
+   { "opciones": ["a) San Luis", "b) Córdoba", "c) La Rioja"], "respuesta": "b", "video": "videos/5gf.mp4" }
   ],
   "INTERMEDIAS": [
     { "opciones": ["a) Río Paraná", "b) Río de la Plata", "c) Río Uruguay"], "respuesta": "b", "video": "videos/19gf.mp4" },
@@ -16,7 +16,7 @@ const preguntas = {
   //  { "opciones": ["a) Bahía Blanca", "b) Córdoba", "c) Necochea"], "respuesta": "b", "video": "videos/30gf.mp4" }
   ],
   "DIFICILES": [
-    { "opciones": ["a) Una vasta llanura que abarca partes de Argentina, Bolivia y Paraguay", "b) Un desierto en el noroeste de Argentina", "c) Una zona costera en el noreste de Argentina"], "respuesta": "a", "video": "videos/11.mp4" },
+//    { "opciones": ["a) Una vasta llanura que abarca partes de Argentina, Bolivia y Paraguay", "b) Un desierto en el noroeste de Argentina", "c) Una zona costera en el noreste de Argentina"], "respuesta": "a", "video": "videos/11.mp4" },
     { "opciones": ["a) 2", "b) 3", "c) 4"], "respuesta": "b", "video": "videos/2gf.mp4" },
     { "opciones": ["a) Lago Buenos Aires", "b) Lago Nahuel Huapi", "c) Lago Argentino"], "respuesta": "c", "video": "videos/3gf.mp4" },//chequeado
 //    { "opciones": ["a) González Catán", "b) Ramos Mejía", "c) Avellaneda"], "respuesta": "c", "video": "videos/.mp4" }, //chequear video
@@ -54,9 +54,24 @@ function mostrarPregunta() {
 
   const videoPregunta = document.getElementById("videopregunta");
   videoPregunta.innerHTML = `<source src="${preguntaActual.video}" type="video/mp4">`;
-  videoPregunta.style.display = 'block';
-  videoPregunta.load();
-  videoPregunta.play();
+  videoPregunta.style.display = "block";
+  videoPregunta.load(); 
+
+  // ✅ Reproducir automáticamente sin error (muteado la primera vez)
+  videoPregunta.muted = true;
+  const playPromise = videoPregunta.play();
+
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        // Luego de unos segundos, si querés, podés activar el sonido:
+        setTimeout(() => (videoPregunta.muted = false), 1000);
+      })
+      .catch((err) => {
+        console.warn("No se pudo reproducir el video:", err);
+      });
+  }
+  
 }
 
 function verificarRespuesta(opcion, correcta) {

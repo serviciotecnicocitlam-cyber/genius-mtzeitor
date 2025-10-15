@@ -44,7 +44,6 @@ const videofalse = document.getElementById('videofalse');
 const videotrue = document.getElementById('videotrue');
 
 let preguntaActual = null;
-
 mostrarPregunta();
 
 function mostrarPregunta() {
@@ -67,10 +66,25 @@ function mostrarPregunta() {
 
   const videoPregunta = document.getElementById("videopregunta");
   videoPregunta.innerHTML = `<source src="${preguntaActual.video}" type="video/mp4">`;
-  videoPregunta.style.display = 'block';
+  videoPregunta.style.display = "block";
   videoPregunta.load();
-  videoPregunta.play();
+
+  // ✅ Reproducir automáticamente sin error (muteado la primera vez)
+  videoPregunta.muted = true;
+  const playPromise = videoPregunta.play();
+
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        // Luego de unos segundos, si querés, podés activar el sonido:
+        setTimeout(() => (videoPregunta.muted = false), 500);
+      })
+      .catch((err) => {
+        console.warn("No se pudo reproducir el video:", err);
+      });
+  }
 }
+
 
 function verificarRespuesta(opcion, correcta) {
   // Desactivar botones mientras se reproduce video

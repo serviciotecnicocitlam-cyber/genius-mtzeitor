@@ -68,11 +68,26 @@ function mostrarPregunta() {
     opcionesDiv.appendChild(btn);
   });
 
-  const videoPregunta = document.getElementById("videopregunta");
+   const videoPregunta = document.getElementById("videopregunta");
   videoPregunta.innerHTML = `<source src="${preguntaActual.video}" type="video/mp4">`;
-  videoPregunta.style.display = 'block';
-  videoPregunta.load();
-  videoPregunta.play();
+  videoPregunta.style.display = "block";
+  videoPregunta.load(); 
+
+  // ✅ Reproducir automáticamente sin error (muteado la primera vez)
+  videoPregunta.muted = true;
+  const playPromise = videoPregunta.play();
+
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        // Luego de unos segundos, si querés, podés activar el sonido:
+        setTimeout(() => (videoPregunta.muted = false), 1000);
+      })
+      .catch((err) => {
+        console.warn("No se pudo reproducir el video:", err);
+      });
+  }
+  
 }
 
 function verificarRespuesta(opcion, correcta) {
