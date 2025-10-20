@@ -30,7 +30,7 @@ const preguntas = {
     { "opciones": ["a) Tren Belgrano Sur", "b) Tren Mitre", "c) Tren Roca"], "respuesta": "a", "video": "videos/tren.mp4" },//revisado
     { "opciones": ["a) Tapiales", "b) Isidro Casanova", "c) González Catán"], "respuesta": "a", "video": "videos/tapiales.mp4" },//revisado
     { "opciones": ["a) Av. Crovara", "b) Av. San Martín", "c) Av. General Paz"], "respuesta": "a", "video": "videos/av.mp4" },//revisado
-    { "opciones": ["a) Eva Duarte de Perón", "b) Juana Azurduy", "c) Alicia Moreau de Justo"], "respuesta": "a", "video": "videos/dificil6.mp4" },//revisado
+    { "opciones": ["a) Eva Duarte de Perón", "b) Juana Azurduy", "c) Alicia Moreau de Justo"], "respuesta": "a", "video": "videos/eva.mp4" },//revisado
     { "opciones": ["a) Río Reconquista", "b) Río de la Plata", "c) Riachuelo"], "respuesta": "c", "video": "videos/rio.mp4" },//revisado
     { "opciones": ["a) Ramos Mejía", "b) González Catán", "c) Laferrere"], "respuesta": "a", "video": "videos/ramosme.mp4" },//revisado
     { "opciones": ["a) Ruta Nacional Nº 3", "b) Ruta Nacional Nº 2", "c) Ruta Nacional Nº 8"], "respuesta": "a", "video": "videos/ruta.mp4" },//revisado
