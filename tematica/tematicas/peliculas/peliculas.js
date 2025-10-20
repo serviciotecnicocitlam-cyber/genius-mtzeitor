@@ -2,25 +2,40 @@
 
 const preguntas = {
     "FACILES": [
-        { "opciones": ["a) Nueve reinas", "b) Kamchatka", "c) La historia oficial"], "respuesta": "c", "video": "videos/1.mp4" },
-        { "opciones": ["a) Carancho", "b) Nueve reinas", "c) El secreto de sus ojos"], "respuesta": "c", "video": "videos/2.mp4" },
-        { "opciones": ["a) Atrápame si puedes", "b) El Lobo de Wall Street", "c) El Renacido (The Revenant)"], "respuesta": "c", "video": "videos/3.mp4" },
-        { "opciones": ["a) Futbolín", "b) Metegol", "c) Golazo"], "respuesta": "b", "video": "videos/4.mp4" },
-        { "opciones": ["a) Capitán América", "b) Thor", "c) Iron Man"], "respuesta": "c", "video": "videos/5.mp4" }
+        { "opciones": ["a) James Cameron", "b) Steven Spielberg", "c) George Lucas"], "respuesta": "b", "video": "videos/1.mp4" }, 
+        { "opciones": ["a) El Ángel", "b) Carancho", "c) Relatos Salvajes"], "respuesta": "a", "video": "videos/2.mp4" },
+        { "opciones": ["a) Titanic", "b) Forrest Gump", "c) Gladiador"], "respuesta": "a", "video": "videos/3.mp4" }, 
+        { "opciones": ["a) Sudáfrica", "b) Egipto", "c) India"], "respuesta": "a", "video": "videos/4.mp4" }, 
+        { "opciones": ["a) El Señor de los Anillos", "b) Harry Potter", "c) Narnia"], "respuesta": "b", "video": "videos/5.mp4" }, 
+        { "opciones": ["a) Carancho", "b) Relatos Salvajes", "c) El Clan"], "respuesta": "b", "video": "videos/6.mp4" }, 
+        { "opciones": ["a) Robert Downey Jr.", "b) Chris Evans", "c) Mark Ruffalo"], "respuesta": "a", "video": "videos/7.mp4" },
+        { "opciones": ["a) Avatar", "b) Titanic", "c) Avengers: Endgame"], "respuesta": "a", "video": "videos/8.mp4" }, 
+        { "opciones": ["a) Johnny Depp", "b) Orlando Bloom", "c) Colin Farrell"], "respuesta": "a", "video": "videos/9.mp4" }, 
+        { "opciones": ["a) Guillermo Francella", "b) Ricardo Darín", "c) Leonardo Sbaraglia"], "respuesta": "b", "video": "videos/10.mp4" }, 
     ],
     "INTERMEDIAS": [
-        { "opciones": ["a) El clan", "b) Relatos Salvajes", "c) El secreto de sus ojos"], "respuesta": "b", "video": "videos/6.mp4" },
-        { "opciones": ["a) Tenet", "b) Matrix", "c) Inception (El Origen)"], "respuesta": "c", "video": "videos/7.mp4" },
-        { "opciones": ["a) Carancho", "b) Nueve Reinas", "c) El hijo de la novia"], "respuesta": "b", "video": "videos/8.mp4" },
-        { "opciones": ["a) La vida es bella", "b) El niño con el pijama de rayas", "c) Jojo Rabbit"], "respuesta": "b", "video": "videos/9.mp4" },
-        { "opciones": ["a) Tiempo de Valientes", "b) El Clan", "c) Zama"], "respuesta": "b", "video": "videos/10.mp4" }
+        { "opciones": ["a) Emma Stone", "b) Jennifer Lawrence", "c) Natalie Portman"], "respuesta": "a", "video": "videos/11.mp4" }, 
+        { "opciones": ["a) La La Land", "b) Moonlight", "c) Manchester by the Sea"], "respuesta": "b", "video": "videos/12.mp4" }, 
+        { "opciones": ["a) The Wolf of Wall Street", "b) Catch Me If You Can", "c) The Great Gatsby"], "respuesta": "a", "video": "videos/13.mp4" }, 
+        { "opciones": ["a) Ryan Reynolds", "b) Chris Evans", "c) Hugh Jackman"], "respuesta": "a", "video": "videos/14.mp4" }, 
+        { "opciones": ["a) Batman comienza", "b) Batman: el caballero oscuro", "c) Inception"], "respuesta": "b", "video": "videos/15.mp4" }, 
+        { "opciones": ["a) Guillermo del toro", "b) Alfonso Cuarón", "c) Alejandro Gonzáles Iñárritu"], "respuesta": "a", "video": "videos/16.mp4" }, 
+        { "opciones": ["a) Hugh Jackman", "b) Chris Hemsworth", "c) Ben Affleck"], "respuesta": "a", "video": "videos/17.mp4" },
+        { "opciones": ["a) El Angel", "b) El Clan", "c) Nueve Reinas"], "respuesta": "b", "video": "videos/18.mp4" }, 
+        { "opciones": ["a) Sudáfrica", "b) Egipto", "c) India"], "respuesta": "c", "video": "videos/19.mp4" }, 
+        { "opciones": ["a) Steven Spielberg", "b) George Lucas", "c) Peter Jackson"], "respuesta": "a", "video": "videos/20.mp4" }, 
     ],
     "DIFICILES": [
-        { "opciones": ["a) Blade Runner 2049", "b) COCO", "c) La forma del agua"], "respuesta": "c", "video": "videos/dificil1.mp4" },
-        { "opciones": ["a) 1917", "b) La La Land", "c) Birdman"], "respuesta": "c", "video": "videos/dificil2.mp4" },
-        { "opciones": ["a) El aura", "b) El secreto de sus ojos", "c) El hombre de al lado"], "respuesta": "b", "video": "videos/dificil3.mp4" },
-        { "opciones": ["a) 1", "b) 2", "c) 3"], "respuesta": "b", "video": "videos/dificil4.mp4" },
-        { "opciones": ["a) El suplente", "b) Argentina, 1985", "c) Crónica de una fuga"], "respuesta": "b", "video": "videos/dificil5.mp4" }
+        { "opciones": ["a) Brad Pitt", "b) Keanu Reeves", "c) Matt Damon"], "respuesta": "b", "video": "videos/21.mp4" },
+        { "opciones": ["a) El secreto de sus ojos", "b) Relatos salvajes", "c) La historia oficial"], "respuesta": "a", "video": "videos/22.mp4" },
+        { "opciones": ["a) Emma Watson", "b) Jennifer Lawrence", "c) Kristen Stewart"], "respuesta": "b", "video": "videos/23.mp4" },
+        { "opciones": ["a) James Cameron", "b) Ridley Scott", "c) Francis Ford Coppola"], "respuesta": "a", "video": "videos/24.mp4" },
+        { "opciones": ["a) Anna", "b) Elsa", "c) Olaf"], "respuesta": "b", "video": "videos/25.mp4" },
+        { "opciones": ["a) Pulp Fiction", "b) Kill Bill", "c) Django Unchained"], "respuesta": "b", "video": "videos/26.mp4" }, 
+        { "opciones": ["a) Star Trek", "b) Star Wars", "c) Guardianes de la galaxia"], "respuesta": "b", "video": "videos/27.mp4" },
+        { "opciones": ["a) Ricardo Darín", "b) Guillermo Francella", "c) Leonardo Sbaraglia"], "respuesta": "a", "video": "videos/28.mp4" }, 
+        { "opciones": ["a) Intensamente", "b) Valiente", "c) Coco"], "respuesta": "a", "video": "videos/29.mp4" }, 
+        { "opciones": ["a) Jared Leto", "b) Heath Ledger", "c) Joaquín Phoenix"], "respuesta": "b", "video": "videos/30.mp4" }, 
     ]
 };
 let contadorPreguntas = 0;
