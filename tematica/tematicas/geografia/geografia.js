@@ -23,7 +23,6 @@ const preguntas = {
     { "opciones": ["a) San Justo", "b) gonzales catan", "c) avellaneda"], "respuesta": "a", "video": "videos/5gf.mp4" } //chequeado
   ]
 };
-
 let contadorPreguntas = 0;
 let aciertos = 0;
 const videoPregunta = document.getElementById('videopregunta')

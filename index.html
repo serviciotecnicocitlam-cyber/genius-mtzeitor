@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mago</title>
-     <script src="index.js" defer></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+<<<<<<< HEAD
      <audio id="miAudio" autoplay loop>
     <source src="espera.audio.mp3" type="audio/mpeg">
     Tu navegador no soporta audio HTML5.
@@ -17,10 +18,13 @@
 
 
      <video autoplay muted loop id="videoespera">
+=======
+    <video autoplay muted loop id="videoespera">
+>>>>>>> 35b71e92a1b0616860f484bbfdaa53e1da3fd9e4
         <source src="espera.mp4" type="video/mp4">
         Tu navegador no soporta este video.
     </video>
-    <video autoplay muted id="videointro"  style="display: none;" >
+    <video autoplay muted id="videointro" style="display: none;">
         <source src="videopresentacion.mp4" type="video/mp4">
         Tu navegador no soporta este video.
     </video>
@@ -31,23 +35,8 @@
     </audio>
     
     <div class="esfera">
-    <button id="button">¿Quieres jugar?</button>
+        <button id="button">¿Quieres jugar?</button>
     </div>
-    <script>
-const boton = document.getElementById("button");
-const intro = document.getElementById("videointro");
-const espera = document.getElementById("videoespera");
-
-boton.addEventListener("click", () => {
-    // Oculta el video de espera y muestra el de introducción
-    espera.style.display = "none";
-    intro.style.display = "block";
-
-    // Reproduce el video con sonido
-   intro.muted = false;
-    intro.play().catch(err => console.warn("No se pudo reproducir:", err));
-}); 
-</script>
 </body>
 
 </html>
