@@ -3,6 +3,11 @@ const video = document.getElementById("videointro");
 const videoespera = document.getElementById("videoespera")
 video.pause();
 
+
+      const audio = document.getElementById('miAudio');
+      audio.play().catch(error => {
+        console.warn("El navegador bloqueó la reproducción automática:", error);
+      }); 
 button.addEventListener("click", () => {
     // Ocultar botón y fondo
     videoespera.style.display = "none";
