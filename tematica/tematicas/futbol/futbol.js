@@ -1,4 +1,4 @@
-const preguntas = {
+const preguntas = { 
   "FACILES": [                                              //SACANDO LAS 5 PREGUNTAS, FUTBOL YA ESTA TERMINADO
     { "opciones": ["a) Maracaná", "b) Morumbí", "c) Mineirao"], "respuesta": "a", "video": "videos/1.mp4" },//revisado
     { "opciones": ["a) 5", "b) 24", "c) 13"], "respuesta": "b", "video": "videos/2.mp4" },//revisado
