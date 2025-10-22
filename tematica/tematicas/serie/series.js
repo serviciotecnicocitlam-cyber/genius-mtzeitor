@@ -1,4 +1,4 @@
-                                                                      //FALTAN VIDEOS Y ASIGNACION
+                                                                      //Listo esta completa esta tematica
 
 const preguntas = {
  
