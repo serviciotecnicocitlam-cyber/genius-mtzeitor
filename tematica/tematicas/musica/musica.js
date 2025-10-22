@@ -13,7 +13,7 @@ const preguntas = {
     ],
     "INTERMEDIAS": [
         { "opciones": ["a) Charly García", "b) Gustavo Cerati", "c) Fito Páez"], "respuesta": "b", "video": "videos/20.mp4" },
-        { "opciones": ["a) Los Fabulosos Cadillacs", "b) Patricio Rey y sus Redondito de Ricota", "c) Rata Blanca"], "respuesta": "b", "video": "videos/12.mp4" },
+        { "opciones": ["a) Tiler Mack", "b) Harry Styles", "c) Robbie williams"], "respuesta": "c", "video": "videos/12.mp4" },
         { "opciones": ["a) Carlos Alberto García", "b) Carlos Alberto Gómez", "c) Carlos Alberto García Moreno"], "respuesta": "a", "video": "videos/22.mp4" },
         { "opciones": ["a) Virus", "b) Soda Stereo", "c) Los Enanitos Verdes"], "respuesta": "b", "video": "videos/23.mp4" },
        // { "opciones": ["a) León Gieco", "b) Luis Alberto Spinetta", "c) Fito Páez"], "respuesta": "c", "video": "videos/.mp4" },//falta video
@@ -28,14 +28,15 @@ const preguntas = {
       //  { "opciones": ["a) Bizarrap", "b) Wos", "c) Ecko"], "respuesta": "c", "video": "videos/dificil2.mp4" },
       //  { "opciones": ["a) Ecko", "b) L-Gante", "c) Bizarrap"], "respuesta": "b", "video": "videos/dificil3.mp4" },
         { "opciones": ["a) David LC", "b) Walter 'Pocho' Calderón", "c) El Dipy"], "respuesta": "b", "video": "videos/43.mp4" },
-        { "opciones": ["a) Lit Killah", "b) Bizarrap", "c) Ecko"], "respuesta": "b", "video": "videos/40.mp4" },
+        { "opciones": ["a) Ramos Mejía", "b) González Catán", "c) Isidro Casanova"], "respuesta": "b", "video": "videos/40.mp4" },
       //  { "opciones": ["a) L-Gante", "b) KHEA", "c) Ecko"], "respuesta": "a", "video": "videos/.mp4" },
       //  { "opciones": ["a) Trueno", "b) Ysy A", "c) Duki"], "respuesta": "b", "video": "videos/dificil7.mp4" },
       //  { "opciones": ["a) C.R.O", "b) Lit Killah", "c) KHEA"], "respuesta": "a", "video": "videos/dificil8.mp4" },
-        { "opciones": ["a) L-Gante", "b) Bizarrap", "c) Duki"], "respuesta": "a", "video": "videos/44.mp4" },
-        { "opciones": ["a) Ecko", "b) Bizarrap", "c) L-Gante"], "respuesta": "b", "video": "videos/45.mp4" }
+        { "opciones": ["a) Lit Killah", "b) Bizarrap", "c) Ecko"], "respuesta": "a", "video": "videos/44.mp4" },
+        { "opciones": ["a) L-Gante", "b) KHEA", "c) Ecko"], "respuesta": "a", "video": "videos/45.mp4" }
     ]
 };
+
 
 let contadorPreguntas = 0;
 let aciertos = 0;

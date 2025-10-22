@@ -38,6 +38,7 @@ const preguntas = {
 //        { "opciones": ["a) Stranglehold", "b) TimeShift", "c) Max Payne"], "respuesta": "c", "video": "videos/dificil10.mp4" }
     ]
 };
+
 let contadorPreguntas = 0;
 let aciertos = 0;
 const videoPregunta = document.getElementById('videopregunta')
