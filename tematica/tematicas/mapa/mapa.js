@@ -1,27 +1,27 @@
                                                           //FALTAN PONER TODOS LOS VIDEOS Y ASIGNAR FOTOS QUE ESTAN EN LA CARPETA
 const preguntas = {
     "FACILES": [
-        { "opciones": ["a) Ramos Mejía", "b) Lomas del Mirador", "c) San Justo"], "respuesta": "a", "imagen": "imagnes/ma.png" },
-        { "opciones": ["a) Tapiales", "b) Lomas del Mirador", "c) Villa Luzuriaga"], "respuesta": "b", "imagen": "imagenes/mago.png" },
-        { "opciones": ["a) La Tablada", "b) Ciudad Evita", "c) Villa Madero"], "respuesta": "a", "imagen": "imagenes/mago.png" },
-        { "opciones": ["a) Villa Celina", "b) Tapiales", "c) Villa Madero"], "respuesta": "c", "imagen": "imagenes/mago.png" },
-        { "opciones": ["a) Ciudad Evita", "b) Villa Madero", "c) Villa Celina"], "respuesta": "c", "imagen": "imagenes/mago.png" },
-        { "opciones": ["a) Aldo Bonzi", "b) Tapiales", "c) Lomas del Mirador"], "respuesta": "b", "imagen": "imagenes/mago.png" }
+        { "opciones": ["a) Ramos Mejía", "b) Lomas del Mirador", "c) San Justo"], "respuesta": "a", "imagen": "imagenes/1.png" },
+        { "opciones": ["a) Tapiales", "b) Lomas del Mirador", "c) Villa Luzuriaga"], "respuesta": "b", "imagen": "imagenes/2.png" },
+        { "opciones": ["a) La Tablada", "b) Ciudad Evita", "c) Villa Madero"], "respuesta": "a", "imagen": "imagenes/3.png" },
+        { "opciones": ["a) Villa Celina", "b) Tapiales", "c) Villa Madero"], "respuesta": "c", "imagen": "imagenes/4.png" },
+        { "opciones": ["a) Ciudad Evita", "b) Villa Madero", "c) Villa Celina"], "respuesta": "c", "imagen": "imagenes/5.png" },
+        { "opciones": ["a) Aldo Bonzi", "b) Tapiales", "c) Lomas del Mirador"], "respuesta": "b", "imagen": "imagenes/6.png" }
     ],
     "INTERMEDIAS": [
-        { "opciones": ["a) Aldo Bonzi", "b) La Tablada", "c) Villa Luzuriaga"], "respuesta": "a", "imagen": "imagenes/inter1.jpg" },
-        { "opciones": ["a) San Justo", "b) Lomas del Mirador", "c) Ciudad Evita"], "respuesta": "c", "imagen": "imagenes/inter2.jpg" },
-        { "opciones": ["a) Ramos Mejía", "b) San Justo", "c) Isidro Casanova"], "respuesta": "b", "imagen": "imagenes/inter3.jpg" },
-        { "opciones": ["a) Villa Luzuriaga", "b) Lomas del Mirador", "c) Ciudad Evita"], "respuesta": "a", "imagen": "imagenes/inter4.jpg" },
-        { "opciones": ["a) Isidro Casanova", "b) Gregorio de Laferrere", "c) Rafael Castillo"], "respuesta": "a", "imagen": "imagenes/inter5.jpg" }
+        { "opciones": ["a) Aldo Bonzi", "b) La Tablada", "c) Villa Luzuriaga"], "respuesta": "a", "imagen": "imagenes/7.png" },
+        { "opciones": ["a) San Justo", "b) Lomas del Mirador", "c) Ciudad Evita"], "respuesta": "c", "imagen": "imagenes/8.png" },
+        { "opciones": ["a) Ramos Mejía", "b) San Justo", "c) Isidro Casanova"], "respuesta": "b", "imagen": "imagenes/9.png" },
+        // { "opciones": ["a) Villa Luzuriaga", "b) Lomas del Mirador", "c) Ciudad Evita"], "respuesta": "a", "imagen": "imagenes/10.png" },
+        // { "opciones": ["a) Isidro Casanova", "b) Gregorio de Laferrere", "c) Rafael Castillo"], "respuesta": "a", "imagen": "imagenes/11.png" }
     ],
-    "DIFICILES": [
-        { "opciones": ["a) Gregorio de Laferrere", "b) Rafael Castillo", "c) González Catán"], "respuesta": "b", "imagen": "imagenes/dificil1.jpg" },
-        { "opciones": ["a) Gregorio de Laferrere", "b) Isidro Casanova", "c) Virrey del Pino"], "respuesta": "a", "imagen": "imagenes/dificil2.jpg" },
-        { "opciones": ["a) Rafael Castillo", "b) Virrey del Pino", "c) González Catán"], "respuesta": "c", "imagen": "imagenes/dificil3.jpg" },
-        { "opciones": ["a) Virrey del Pino", "b) Gregorio de Laferrere", "c) 20 de Junio"], "respuesta": "a", "imagen": "imagenes/dificil4.jpg" },
-        { "opciones": ["a) Aldo Bonzi", "b) Virrey del Pino", "c) 20 de Junio"], "respuesta": "c", "imagen": "imagenes/dificil5.jpg" }
-    ]
+    // "DIFICILES": [
+    //     { "opciones": ["a) Gregorio de Laferrere", "b) Rafael Castillo", "c) González Catán"], "respuesta": "b", "imagen": "imagenes/12.png" },
+    //     { "opciones": ["a) Gregorio de Laferrere", "b) Isidro Casanova", "c) Virrey del Pino"], "respuesta": "a", "imagen": "imagenes/13.png" },
+    //     { "opciones": ["a) Rafael Castillo", "b) Virrey del Pino", "c) González Catán"], "respuesta": "c", "imagen": "imagenes/14.png" },
+    //     { "opciones": ["a) Virrey del Pino", "b) Gregorio de Laferrere", "c) 20 de Junio"], "respuesta": "a", "imagen": "imagenes/15.png" },
+    //     { "opciones": ["a) Aldo Bonzi", "b) Virrey del Pino", "c) 20 de Junio"], "respuesta": "c", "imagen": "imagenes/16.png" }
+    // ]
 };
 
 

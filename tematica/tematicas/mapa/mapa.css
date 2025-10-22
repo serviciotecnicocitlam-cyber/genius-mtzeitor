@@ -34,10 +34,10 @@ body {
 }
 
 #imgpregunta {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     position: absolute;
-    top: 45%;
+    top: 20%;
     /* lo pone debajo del texto */
     left: 50%;
     transform: translate(-50%, 0);
@@ -45,8 +45,6 @@ body {
     z-index: 1;
     /* debajo de la pregunta */
 }
-
-
 /* Botones de opciones */
 .opcion {
     width: 150px;

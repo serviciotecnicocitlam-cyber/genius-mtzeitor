@@ -1,29 +1,28 @@
-                                                      //CHEQUEAR VIDEOS POR QUE ESTAN MAL PUESTOS O NO ESTAN
+                                                      //todas las preguntas son de la matanza, asi que no hay facil y intermedio, y son todas dificiles
 
 const preguntas = {
   "FACILES": [
-    { "opciones": ["a) Mendoza", "b) Tierra del Fuego", "c) Santa Cruz"], "respuesta": "b", "video": "videos/1gf.mp4" },
-    { "opciones": ["a) Tucumán", "b) Jujuy", "c) La Pampa"], "respuesta": "b", "video": "videos/2gf.mp4" },
-//    { "opciones": ["a) Mendoza", "b) Salta", "c) Entre Ríos"], "respuesta": "a", "video": "videos/3.mp4" },
-    { "opciones": ["a) 20", "b) 23", "c) 24"], "respuesta": "c", "video": "videos/4gf.mp4" },
-   { "opciones": ["a) San Luis", "b) Córdoba", "c) La Rioja"], "respuesta": "b", "video": "videos/5gf.mp4" }
-  ],
+    { "opciones": ["a) 1778", "b) 1850", "c) 1856"], "respuesta": "a", "video": "videos/18gf.mp4" },//chequeado
+    { "opciones": ["a) De oeste a este", "b) De norte a sur", "c) De este a oeste"], "respuesta": "a", "video": "videos/20gf.mp4" },//chequeado
+    { "opciones": ["a) Buenos Aires", "b) Córdoba", "c) Mendoza"], "respuesta": "a", "video": "videos/21gf.mp4" },//chequeado
+    { "opciones": ["a) 30", "b) entre 30 y 50", "c) 70"], "respuesta": "c", "video": "videos/4gf.mp4" },//chequeado
+    { "opciones": ["a) solo nivel terciario", "b) nivel universitario de grado y posgrado", "c) Solo educación secundaria"], "respuesta": "b", "video": "videos/17gf.mp4" } //chequeado
+  ], 
   "INTERMEDIAS": [
-    { "opciones": ["a) Río Paraná", "b) Río de la Plata", "c) Río Uruguay"], "respuesta": "b", "video": "videos/19gf.mp4" },
-    { "opciones": ["a) Buenos Aires", "b) Córdoba", "c) Mendoza"], "respuesta": "a", "video": "videos/21gf.mp4" },
-    { "opciones": ["a) Buenos Aires", "b) La Plata", "c) Mar del Plata"], "respuesta": "b", "video": "videos/22gf.mp4" },
-    { "opciones": ["a) Río Paraná", "b) Río Uruguay", "c) Océano Atlántico"], "respuesta": "c", "video": "videos/26gf.mp4" },
-  //  { "opciones": ["a) Bahía Blanca", "b) Córdoba", "c) Necochea"], "respuesta": "b", "video": "videos/30gf.mp4" }
+    { "opciones": ["a) Río Paraná", "b) Río de la Plata", "c) Río Uruguay"], "respuesta": "b", "video": "videos/19gf.mp4" }, //chequeado
+    { "opciones": ["a) Buenos Aires", "b) Córdoba", "c) Mendoza"], "respuesta": "a", "video": "videos/21gf.mp4" }, //chequeado
+    { "opciones": ["a) Buenos Aires", "b) La Plata", "c) Mar del Plata"], "respuesta": "b", "video": "videos/22gf.mp4" }, //chequeado
+    { "opciones": ["a) Río Paraná", "b) Río Uruguay", "c) Océano Atlántico"], "respuesta": "c", "video": "videos/26gf.mp4" },//chequeado
+    { "opciones": ["a) CABA", "b) bahia blanca", "c) lujan"], "respuesta": "a", "video": "videos/23gf.mp4" } //chequeado
   ],
   "DIFICILES": [
-//    { "opciones": ["a) Una vasta llanura que abarca partes de Argentina, Bolivia y Paraguay", "b) Un desierto en el noroeste de Argentina", "c) Una zona costera en el noreste de Argentina"], "respuesta": "a", "video": "videos/11.mp4" },
-    { "opciones": ["a) 2", "b) 3", "c) 4"], "respuesta": "b", "video": "videos/2gf.mp4" },
+    { "opciones": ["a) 5", "b) 14", "c) 25"], "respuesta": "b", "video": "videos/9gf.mp4" },//chequeado
+    { "opciones": ["a) 1", "b) 2", "c) 3"], "respuesta": "c", "video": "videos/2gf.mp4" },//chequeado
     { "opciones": ["a) Lago Buenos Aires", "b) Lago Nahuel Huapi", "c) Lago Argentino"], "respuesta": "c", "video": "videos/3gf.mp4" },//chequeado
-//    { "opciones": ["a) González Catán", "b) Ramos Mejía", "c) Avellaneda"], "respuesta": "c", "video": "videos/.mp4" }, //chequear video
-    { "opciones": ["a) San Justo", "b) Isidro Casanova", "c) Laferrere"], "respuesta": "a", "video": "videos/6gf.mp4" } //video erroneo
+    { "opciones": ["a) erosion del suelo", "b) contaminacion del rio matanza riachuelo", "c) escasez de agua"], "respuesta": "b", "video": "videos/8gf.mp4" },//chequeado
+    { "opciones": ["a) San Justo", "b) gonzales catan", "c) avellaneda"], "respuesta": "a", "video": "videos/5gf.mp4" } //chequeado
   ]
 };
-
 let contadorPreguntas = 0;
 let aciertos = 0;
 const videoPregunta = document.getElementById('videopregunta')
