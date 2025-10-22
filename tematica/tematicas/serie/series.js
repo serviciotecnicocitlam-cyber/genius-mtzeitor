@@ -6,7 +6,7 @@ const preguntas = {
         { "opciones": ["a) How I Met Your Mother", "b) Seinfeld", "c) Friends"], "respuesta": "c", "video": "videos/1.mp4" },
         { "opciones": ["a) Un gallo para Esculapio", "b) Los Simuladores", "c) El Marginal"], "respuesta": "b", "video": "videos/2.mp4" },
         { "opciones": ["a) Locke & Key", "b) The Umbrella Academy", "c) Stranger Things"], "respuesta": "c", "video": "videos/3.mp4" },
-        { "opciones": ["a) Monzón", "b) El Reino", "c) Breaking Bad"], "respuesta": "c", "video": "videos/4.mp4" },
+        { "opciones": ["a) Monzón", "b) El Reino", "c) Argentina, 1985 (serie documental)"], "respuesta": "c", "video": "videos/4.mp4" },
         { "opciones": ["a) Narcos", "b) Ozark", "c) Argentina, 1985 (serie documental)"], "respuesta": "c", "video": "videos/5.mp4" },
     ],
     "INTERMEDIAS": [
