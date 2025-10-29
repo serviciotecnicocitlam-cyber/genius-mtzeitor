@@ -1,41 +1,40 @@
-                                                                    //FALTAN ASIGNAR LOS VIDEOS CORRECTOS
 
 const preguntas = {
     "FACILES": [
-        { "opciones": ["a) James Cameron", "b) Steven Spielberg", "c) George Lucas"], "respuesta": "b", "video": "videos/1.mp4" }, 
-        { "opciones": ["a) El Ángel", "b) Carancho", "c) Relatos Salvajes"], "respuesta": "a", "video": "videos/2.mp4" },
-        { "opciones": ["a) Titanic", "b) Forrest Gump", "c) Gladiador"], "respuesta": "a", "video": "videos/3.mp4" }, 
-        { "opciones": ["a) Sudáfrica", "b) Egipto", "c) India"], "respuesta": "a", "video": "videos/4.mp4" }, 
-        { "opciones": ["a) El Señor de los Anillos", "b) Harry Potter", "c) Narnia"], "respuesta": "b", "video": "videos/5.mp4" }, 
-        { "opciones": ["a) Carancho", "b) Relatos Salvajes", "c) El Clan"], "respuesta": "b", "video": "videos/6.mp4" }, 
-        { "opciones": ["a) Robert Downey Jr.", "b) Chris Evans", "c) Mark Ruffalo"], "respuesta": "a", "video": "videos/7.mp4" },
-        { "opciones": ["a) Avatar", "b) Titanic", "c) Avengers: Endgame"], "respuesta": "a", "video": "videos/8.mp4" }, 
-        { "opciones": ["a) Johnny Depp", "b) Orlando Bloom", "c) Colin Farrell"], "respuesta": "a", "video": "videos/9.mp4" }, 
-        { "opciones": ["a) Guillermo Francella", "b) Ricardo Darín", "c) Leonardo Sbaraglia"], "respuesta": "b", "video": "videos/10.mp4" }, 
+        { "opciones": ["a) James Cameron", "b) Steven Spielberg", "c) George Lucas"], "respuesta": "b", "video": "videos/1v.mp4" }, //revisado
+        { "opciones": ["a) El Ángel", "b) Carancho", "c) Relatos Salvajes"], "respuesta": "a", "video": "videos/2v.mp4" }, //revisado
+        { "opciones": ["a) Titanic", "b) Forrest Gump", "c) Gladiador"], "respuesta": "a", "video": "videos/3v.mp4" }, //revisado
+        { "opciones": ["a) Sudáfrica", "b) Egipto", "c) India"], "respuesta": "a", "video": "videos/4v.mp4" }, //revisado
+        { "opciones": ["a) El Señor de los Anillos", "b) Harry Potter", "c) Narnia"], "respuesta": "b", "video": "videos/5v.mp4" }, //revisado
+        { "opciones": ["a) Carancho", "b) Relatos Salvajes", "c) El Clan"], "respuesta": "b", "video": "videos/6v.mp4" }, //revisado
+        { "opciones": ["a) Robert Downey Jr.", "b) Chris Evans", "c) Mark Ruffalo"], "respuesta": "a", "video": "videos/7v.mp4" }, //revisado
+        { "opciones": ["a) Avatar", "b) Titanic", "c) Avengers: Endgame"], "respuesta": "a", "video": "videos/8v.mp4" }, //revisado
+        { "opciones": ["a) Johnny Depp", "b) Orlando Bloom", "c) Colin Farrell"], "respuesta": "a", "video": "videos/9v.mp4" }, //revisado
+        { "opciones": ["a) Guillermo Francella", "b) Ricardo Darín", "c) Leonardo Sbaraglia"], "respuesta": "b", "video": "videos/10v.mp4" }, //revisado
     ],
     "INTERMEDIAS": [
-        { "opciones": ["a) Emma Stone", "b) Jennifer Lawrence", "c) Natalie Portman"], "respuesta": "a", "video": "videos/11.mp4" }, 
-        { "opciones": ["a) La La Land", "b) Moonlight", "c) Manchester by the Sea"], "respuesta": "b", "video": "videos/12.mp4" }, 
-        { "opciones": ["a) The Wolf of Wall Street", "b) Catch Me If You Can", "c) The Great Gatsby"], "respuesta": "a", "video": "videos/13.mp4" }, 
-        { "opciones": ["a) Ryan Reynolds", "b) Chris Evans", "c) Hugh Jackman"], "respuesta": "a", "video": "videos/14.mp4" }, 
-        { "opciones": ["a) Batman comienza", "b) Batman: el caballero oscuro", "c) Inception"], "respuesta": "b", "video": "videos/15.mp4" }, 
-        { "opciones": ["a) Guillermo del toro", "b) Alfonso Cuarón", "c) Alejandro Gonzáles Iñárritu"], "respuesta": "a", "video": "videos/16.mp4" }, 
-        { "opciones": ["a) Hugh Jackman", "b) Chris Hemsworth", "c) Ben Affleck"], "respuesta": "a", "video": "videos/17.mp4" },
-        { "opciones": ["a) El Angel", "b) El Clan", "c) Nueve Reinas"], "respuesta": "b", "video": "videos/18.mp4" }, 
-        { "opciones": ["a) Sudáfrica", "b) Egipto", "c) India"], "respuesta": "c", "video": "videos/19.mp4" }, 
-        { "opciones": ["a) Steven Spielberg", "b) George Lucas", "c) Peter Jackson"], "respuesta": "a", "video": "videos/20.mp4" }, 
+        { "opciones": ["a) Emma Stone", "b) Jennifer Lawrence", "c) Natalie Portman"], "respuesta": "a", "video": "videos/11v.mp4" }, //revisado
+        { "opciones": ["a) La La Land", "b) Moonlight", "c) Manchester by the Sea"], "respuesta": "b", "video": "videos/12v.mp4" }, //revisado
+        { "opciones": ["a) The Wolf of Wall Street", "b) Catch Me If You Can", "c) The Great Gatsby"], "respuesta": "a", "video": "videos/13v.mp4" }, //revisado
+        { "opciones": ["a) Ryan Reynolds", "b) Chris Evans", "c) Hugh Jackman"], "respuesta": "a", "video": "videos/14v.mp4" }, //revisado
+        { "opciones": ["a) Batman comienza", "b) Batman: el caballero oscuro", "c) Inception"], "respuesta": "b", "video": "videos/15v.mp4" }, //revisado
+        { "opciones": ["a) Guillermo del toro", "b) Alfonso Cuarón", "c) Alejandro Gonzáles Iñárritu"], "respuesta": "a", "video": "videos/16v.mp4" }, //revisado
+        { "opciones": ["a) Hugh Jackman", "b) Chris Hemsworth", "c) Ben Affleck"], "respuesta": "a", "video": "videos/17v.mp4" },//revisado
+        { "opciones": ["a) El Angel", "b) El Clan", "c) Nueve Reinas"], "respuesta": "b", "video": "videos/18v.mp4" }, //revisado
+        { "opciones": ["a) Steven Spielberg", "b) George Lucas", "c) Peter Jackson"], "respuesta": "c", "video": "videos/19v.mp4" }, //revisado
+        { "opciones": ["a) Ratatouille", "b) Buscando a Nemo", "c) Intensamente"], "respuesta": "a", "video": "videos/20v.mp4" }, //revisado
     ],
     "DIFICILES": [
-        { "opciones": ["a) Brad Pitt", "b) Keanu Reeves", "c) Matt Damon"], "respuesta": "b", "video": "videos/21.mp4" },
-        { "opciones": ["a) El secreto de sus ojos", "b) Relatos salvajes", "c) La historia oficial"], "respuesta": "a", "video": "videos/22.mp4" },
-        { "opciones": ["a) Emma Watson", "b) Jennifer Lawrence", "c) Kristen Stewart"], "respuesta": "b", "video": "videos/23.mp4" },
-        { "opciones": ["a) James Cameron", "b) Ridley Scott", "c) Francis Ford Coppola"], "respuesta": "a", "video": "videos/24.mp4" },
-        { "opciones": ["a) Anna", "b) Elsa", "c) Olaf"], "respuesta": "b", "video": "videos/25.mp4" },
-        { "opciones": ["a) Pulp Fiction", "b) Kill Bill", "c) Django Unchained"], "respuesta": "b", "video": "videos/26.mp4" }, 
-        { "opciones": ["a) Star Trek", "b) Star Wars", "c) Guardianes de la galaxia"], "respuesta": "b", "video": "videos/27.mp4" },
-        { "opciones": ["a) Ricardo Darín", "b) Guillermo Francella", "c) Leonardo Sbaraglia"], "respuesta": "a", "video": "videos/28.mp4" }, 
-        { "opciones": ["a) Intensamente", "b) Valiente", "c) Coco"], "respuesta": "a", "video": "videos/29.mp4" }, 
-        { "opciones": ["a) Jared Leto", "b) Heath Ledger", "c) Joaquín Phoenix"], "respuesta": "b", "video": "videos/30.mp4" }, 
+        { "opciones": ["a) Brad Pitt", "b) Keanu Reeves", "c) Matt Damon"], "respuesta": "b", "video": "videos/21v.mp4" }, //revisado
+        { "opciones": ["a) El secreto de sus ojos", "b) Relatos salvajes", "c) La historia oficial"], "respuesta": "a", "video": "videos/22v.mp4" }, //revisado
+        { "opciones": ["a) Emma Watson", "b) Jennifer Lawrence", "c) Kristen Stewart"], "respuesta": "b", "video": "videos/23v.mp4" }, //revisado
+        { "opciones": ["a) James Cameron", "b) Ridley Scott", "c) Francis Ford Coppola"], "respuesta": "a", "video": "videos/24v.mp4" }, //revisado
+        { "opciones": ["a) Anna", "b) Elsa", "c) Olaf"], "respuesta": "b", "video": "videos/25v.mp4" }, //revisado
+        { "opciones": ["a) Pulp Fiction", "b) Kill Bill", "c) Django Unchained"], "respuesta": "b", "video": "videos/26v.mp4" }, //revisado
+        { "opciones": ["a) Star Trek", "b) Star Wars", "c) Guardianes de la galaxia"], "respuesta": "b", "video": "videos/27v.mp4" }, //revisado
+        { "opciones": ["a) Ricardo Darín", "b) Guillermo Francella", "c) Leonardo Sbaraglia"], "respuesta": "a", "video": "videos/28v.mp4" }, //revisado
+        { "opciones": ["a) Intensamente", "b) Valiente", "c) Coco"], "respuesta": "a", "video": "videos/29v.mp4" }, //revisado
+        { "opciones": ["a) Jared Leto", "b) Heath Ledger", "c) Joaquín Phoenix"], "respuesta": "b", "video": "videos/30v.mp4" }, //revisado
     ]
 };
 let contadorPreguntas = 0;
