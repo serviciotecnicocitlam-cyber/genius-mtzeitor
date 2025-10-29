@@ -3,25 +3,25 @@
 const preguntas = {
  
     "FACILES": [
-        { "opciones": ["a) How I Met Your Mother", "b) Seinfeld", "c) Friends"], "respuesta": "c", "video": "videos/1sr.mp4" },
-        { "opciones": ["a) Un gallo para Esculapio", "b) Los Simuladores", "c) El Marginal"], "respuesta": "b", "video": "videos/2.mp4" },
-        { "opciones": ["a) Locke & Key", "b) The Umbrella Academy", "c) Stranger Things"], "respuesta": "c", "video": "videos/3.mp4" },
-        { "opciones": ["a) Monzón", "b) El Reino", "c) Argentina, 1985 (serie documental)"], "respuesta": "c", "video": "videos/4.mp4" },
-        { "opciones": ["a) Narcos", "b) Ozark", "c) Breaking Bad"], "respuesta": "c", "video": "videos/5.mp4" },
+        { "opciones": ["a) How I Met Your Mother", "b) Seinfeld", "c) Friends"], "respuesta": "c", "video": "videos/1r.mp4" },
+        { "opciones": ["a) Un gallo para Esculapio", "b) Los Simuladores", "c) El Marginal"], "respuesta": "b", "video": "videos/2r.mp4" },
+        { "opciones": ["a) Locke & Key", "b) The Umbrella Academy", "c) Stranger Things"], "respuesta": "c", "video": "videos/3r.mp4" },
+        { "opciones": ["a) Monzón", "b) El Reino", "c) Argentina, 1985 (serie documental)"], "respuesta": "c", "video": "videos/4r.mp4" },
+        { "opciones": ["a) Narcos", "b) Ozark", "c) Breaking Bad"], "respuesta": "c", "video": "videos/5r.mp4" },
     ],
     "INTERMEDIAS": [
-        { "opciones": ["a) Rick and Morty", "b) BoJack Horseman", "c) Family Guy"], "respuesta": "b", "video": "videos/6.mp4" },
-        { "opciones": ["a) Rebelde Way", "b) Casi Ángeles", "c) Aliados"], "respuesta": "b", "video": "videos/7.mp4" },
-        { "opciones": ["a) Alice in Borderland", "b) Squid Game", "c) Sweet Home"], "respuesta": "b", "video": "videos/8.mp4" },
-        { "opciones": ["a) Apache", "b) Monzón", "c) Puerta 7"], "respuesta": "b", "video": "videos/9.mp4" },
-        { "opciones": ["a) Doom Patrol", "b) The Umbrella Academy", "c) Titans"], "respuesta": "b", "video": "videos/10.mp4" },
+        { "opciones": ["a) Rick and Morty", "b) BoJack Horseman", "c) Family Guy"], "respuesta": "b", "video": "videos/6r.mp4" },
+        { "opciones": ["a) Rebelde Way", "b) Casi Ángeles", "c) Aliados"], "respuesta": "b", "video": "videos/7r.mp4" },
+        { "opciones": ["a) Alice in Borderland", "b) Squid Game", "c) Sweet Home"], "respuesta": "b", "video": "videos/8r.mp4" },
+        { "opciones": ["a) Apache", "b) Monzón", "c) Puerta 7"], "respuesta": "b", "video": "videos/9r.mp4" },
+        { "opciones": ["a) Doom Patrol", "b) The Umbrella Academy", "c) Titans"], "respuesta": "b", "video": "videos/10r.mp4" },
     ],
     "DIFICILES": [
-        { "opciones": ["a) La caída", "b) El Reino", "c) Todos mienten"], "respuesta": "b", "video": "videos/11.mp4" },
-        { "opciones": ["a) Altered Carbon", "b) Westworld", "c) Black Mirror"], "respuesta": "b", "video": "videos/12.mp4" },
-        { "opciones": ["a) Futurama", "b) Rick and Morty", "c) BoJack Horseman"], "respuesta": "b", "video": "videos/13.mp4" },
-        { "opciones": ["a) Okupas", "b) El Puntero", "c) Tumberos"], "respuesta": "a", "video": "videos/14.mp4" },
-        { "opciones": ["a) Una invasión de zombies", "b) Una nevada mortal", "c) Un terremoto global"], "respuesta": "b", "video": "videos/15.mp4" },
+        { "opciones": ["a) La caída", "b) El Reino", "c) Todos mienten"], "respuesta": "b", "video": "videos/11r.mp4" },
+        { "opciones": ["a) Altered Carbon", "b) Westworld", "c) Black Mirror"], "respuesta": "b", "video": "videos/12r.mp4" },
+        { "opciones": ["a) Futurama", "b) Rick and Morty", "c) BoJack Horseman"], "respuesta": "b", "video": "videos/13r.mp4" },
+        { "opciones": ["a) Okupas", "b) El Puntero", "c) Tumberos"], "respuesta": "a", "video": "videos/14r.mp4" },
+        { "opciones": ["a) Una invasión de zombies", "b) Una nevada mortal", "c) Un terremoto global"], "respuesta": "b", "video": "videos/15r.mp4" },
     ]
 };
 
