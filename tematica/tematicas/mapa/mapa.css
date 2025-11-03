@@ -34,8 +34,8 @@ body {
 }
 
 #imgpregunta {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     top: 20%;
     /* lo pone debajo del texto */
