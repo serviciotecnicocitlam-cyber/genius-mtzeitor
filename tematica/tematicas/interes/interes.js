@@ -38,23 +38,52 @@ const preguntas = {
   ]
 };
 
-
-
 let contadorPreguntas = 0;
 let aciertos = 0;
-const videoPregunta = document.getElementById('videopregunta')
+const videoPregunta = document.getElementById('videopregunta');
 const videofalse = document.getElementById('videofalse');
 const videotrue = document.getElementById('videotrue');
 
 let preguntaActual = null;
+let preguntasUsadas = [];
+
+// 🧩 Combinar todas las preguntas de todas las categorías
+let todasLasPreguntas = [];
+Object.values(preguntas).forEach(categoria => {
+  todasLasPreguntas = todasLasPreguntas.concat(categoria);
+});
 
 mostrarPregunta();
 
 function mostrarPregunta() {
-  const categorias = Object.keys(preguntas);
-  const categoria = categorias[Math.floor(Math.random() * categorias.length)];
-  const lista = preguntas[categoria];
-  preguntaActual = lista[Math.floor(Math.random() * lista.length)];
+  // ⚠️ Si ya respondió 6 o no quedan más preguntas → finalizar
+  if (contadorPreguntas >= 6 || preguntasUsadas.length >= todasLasPreguntas.length) {
+    window.location.href = `../../global/resultado.html?aciertos=${aciertos}&total=${contadorPreguntas}`;
+    return;
+  }
+
+  let pregunta;
+  let intentos = 0;
+
+  // 🔁 Buscar una pregunta no repetida
+  do {
+    const categoriaKeys = Object.keys(preguntas);
+    const categoria = categoriaKeys[Math.floor(Math.random() * categoriaKeys.length)];
+    const lista = preguntas[categoria];
+    pregunta = lista[Math.floor(Math.random() * lista.length)];
+    intentos++;
+
+    // Si no encuentra ninguna nueva → fin del juego
+    if (intentos > 50) {
+      console.warn("No hay más preguntas sin repetir.");
+      window.location.href = `../../global/resultado.html?aciertos=${aciertos}&total=${contadorPreguntas}`;
+      return;
+    }
+  } while (preguntasUsadas.includes(pregunta.video));
+
+  // ✅ Guardar la pregunta usada
+  preguntasUsadas.push(pregunta.video);
+  preguntaActual = pregunta;
 
   const opcionesDiv = document.getElementById("opciones");
   opcionesDiv.innerHTML = "";
@@ -68,34 +97,24 @@ function mostrarPregunta() {
     opcionesDiv.appendChild(btn);
   });
 
-  const videoPregunta = document.getElementById("videopregunta");
+  // 🎥 Mostrar video
   videoPregunta.innerHTML = `<source src="${preguntaActual.video}" type="video/mp4">`;
   videoPregunta.style.display = "block";
   videoPregunta.load();
 
-  // ✅ Reproducir automáticamente sin error (muteado la primera vez)
   videoPregunta.muted = true;
   const playPromise = videoPregunta.play();
-
   if (playPromise !== undefined) {
     playPromise
-      .then(() => {
-        // Luego de unos segundos, si querés, podés activar el sonido:
-        setTimeout(() => (videoPregunta.muted = false), 1000);
-      })
-      .catch((err) => {
-        console.warn("No se pudo reproducir el video:", err);
-      });
+      .then(() => setTimeout(() => (videoPregunta.muted = false), 500))
+      .catch(err => console.warn("No se pudo reproducir el video:", err));
   }
-
 }
 
 function verificarRespuesta(opcion, correcta) {
-  // Desactivar botones mientras se reproduce video
   const botones = document.querySelectorAll(".opcion");
   botones.forEach(btn => btn.disabled = true);
 
-  // ✅ DETENER video de la pregunta inmediatamente
   videoPregunta.pause();
   videoPregunta.currentTime = 0;
   videoPregunta.style.display = 'none';
@@ -108,32 +127,20 @@ function verificarRespuesta(opcion, correcta) {
     videotrue.style.display = 'block';
     videotrue.currentTime = 0;
     videotrue.play();
-    videotrue.onended = () => {
-      manejarSiguientePaso();
-    };
+    videotrue.onended = manejarSiguientePaso;
   } else {
     videofalse.style.zIndex = '5';
     videofalse.style.display = 'block';
     videofalse.currentTime = 0;
     videofalse.play();
-    videofalse.onended = () => {
-      manejarSiguientePaso();
-    };
+    videofalse.onended = manejarSiguientePaso;
   }
 
   contadorPreguntas++;
 }
 
-
 function manejarSiguientePaso() {
-  // Ver si fue la última pregunta
-  if (contadorPreguntas >= 6) {
-    window.location.href = `../../global/resultado.html?aciertos=${aciertos}&total=${contadorPreguntas}`;
-  } else {
-    // Mostrar botón de siguiente pregunta
-    videofalse.style.display = 'none';
-    videotrue.style.display = 'none';
-    mostrarPregunta()
-  }
+  videofalse.style.display = 'none';
+  videotrue.style.display = 'none';
+  mostrarPregunta();
 }
-
