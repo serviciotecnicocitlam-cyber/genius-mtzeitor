@@ -20,7 +20,7 @@ const preguntas = {
     { "opciones": ["a) 1", "b) 2", "c) 3"], "respuesta": "c", "video": "videos/2gf.mp4" },//chequeado
     { "opciones": ["a) Lago Buenos Aires", "b) Lago Nahuel Huapi", "c) Lago Argentino"], "respuesta": "c", "video": "videos/3gf.mp4" },//chequeado
     { "opciones": ["a) Erosion del suelo", "b) ContaminaciÓn del Rio Matanza Riachuelo", "c) Escasez de agua"], "respuesta": "b", "video": "videos/8gf.mp4" },//chequeado
-    { "opciones": ["a) San Justo", "b) Gonz Catan", "c) Avellaneda"], "respuesta": "a", "video": "videos/5gf.mp4" } //chequeado
+    { "opciones": ["a) San Justo", "b) González Catán", "c) Avellaneda"], "respuesta": "a", "video": "videos/5gf.mp4" } //chequeado
   ]
 };
 let contadorPreguntas = 0;
