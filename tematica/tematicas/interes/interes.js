@@ -25,7 +25,6 @@ const preguntas = {
     { "opciones": ["a) Cerro Fitz Roy", "b) Cerro Aconcagua", "c) Cerro Champaquí"], "respuesta": "b", "video": "videos/cerron.mp4" },//revisado
   ],
   "DIFICILES": [
-    //{ "opciones": ["a) UNLu", "b) UNLaM", "c) UBA"], "respuesta": "b", "video": "videos/dificil1.mp4" }, //falta video
     { "opciones": ["a) Virrey del Pino", "b) Tapiales", "c) Ramos Mejía"], "respuesta": "a", "video": "videos/mejian.mp4" },//revisado
     { "opciones": ["a) Tren Belgrano Sur", "b) Tren Mitre", "c) Tren Roca"], "respuesta": "a", "video": "videos/trenn.mp4" },//revisado
     { "opciones": ["a) Tapiales", "b) Isidro Casanova", "c) González Catán"], "respuesta": "a", "video": "videos/tapialesn.mp4" },//revisado
