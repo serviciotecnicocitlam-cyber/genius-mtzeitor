@@ -1,21 +1,21 @@
 const preguntas = {
     "FACILES": [
-        { "opciones": ["a) Michael Jackson", "b) Prince", "c) Justin Timberlake"], "respuesta": "a", "video": "videos/1w.mp4" },
-        { "opciones": ["a) Bruno Mars", "b) Ed Sheeran", "c) Shawn Mendes"], "respuesta": "b", "video": "videos/2w.mp4" },
-        { "opciones": ["a) AC/DC", "b) Metallica", "c) The Killers"], "respuesta": "a", "video": "videos/3w.mp4" },
-        { "opciones": ["a) Adele", "b) Beyoncé", "c) Rihanna"], "respuesta": "a", "video": "videos/4w.mp4" },
-        { "opciones": ["a) Alejandro Fernández", "b) Luis Miguel", "c) Chayanne"], "respuesta": "b", "video": "videos/5w.mp4" },
-        { "opciones": ["a) Coldplay", "b) The Beatles", "c) Oasis"], "respuesta": "a", "video": "videos/6t.mp4" },
-        { "opciones": ["a) Beyoncé", "b) Rihanna", "c) Alicia Keys"], "respuesta": "b", "video": "videos/7w.mp4" },
-        { "opciones": ["a) ABBA", "b) Spice Girls", "c) Bee Gees"], "respuesta": "a", "video": "videos/8w.mp4" },
-        { "opciones": ["a) Justin Bieber", "b) The Weeknd", "c) Jason Derulo"], "respuesta": "a", "video": "videos/9w.mp4" },
-        { "opciones": ["a) Whitney Houston", "b) Cyndi Lauper", "c) Madonna"], "respuesta": "c", "video": "videos/10w.mp4" }
+        { "opciones": ["a) Michael Jackson", "b) Prince", "c) Justin Timberlake"], "respuesta": "a", "video": "videos/1n.mp4" },
+        { "opciones": ["a) Bruno Mars", "b) Ed Sheeran", "c) Shawn Mendes"], "respuesta": "b", "video": "videos/2n.mp4" },
+        { "opciones": ["a) AC/DC", "b) Metallica", "c) The Killers"], "respuesta": "a", "video": "videos/3n.mp4" },
+        { "opciones": ["a) Adele", "b) Beyoncé", "c) Rihanna"], "respuesta": "a", "video": "videos/4n.mp4" },
+        { "opciones": ["a) Alejandro Fernández", "b) Luis Miguel", "c) Chayanne"], "respuesta": "b", "video": "videos/5n.mp4" },
+        { "opciones": ["a) Coldplay", "b) The Beatles", "c) Oasis"], "respuesta": "a", "video": "videos/6n.mp4" },
+        { "opciones": ["a) Beyoncé", "b) Rihanna", "c) Alicia Keys"], "respuesta": "b", "video": "videos/7n.mp4" },
+        { "opciones": ["a) ABBA", "b) Spice Girls", "c) Bee Gees"], "respuesta": "a", "video": "videos/8n.mp4" },
+        { "opciones": ["a) Justin Bieber", "b) The Weeknd", "c) Jason Derulo"], "respuesta": "a", "video": "videos/9n.mp4" },
+        { "opciones": ["a) Whitney Houston", "b) Cyndi Lauper", "c) Madonna"], "respuesta": "c", "video": "videos/10n.mp4" }
     ],
     "INTERMEDIAS": [
-        { "opciones": ["a) Charly García", "b) Gustavo Cerati", "c) Fito Páez"], "respuesta": "b", "video": "videos/20w.mp4" },
-        { "opciones": ["a) Tiler Mack", "b) Harry Styles", "c) Robbie williams"], "respuesta": "c", "video": "videos/12w.mp4" },
-        { "opciones": ["a) Carlos Alberto García", "b) Carlos Alberto Gómez", "c) Carlos Alberto García Moreno"], "respuesta": "a", "video": "videos/22w.mp4" },
-        { "opciones": ["a) Virus", "b) Soda Stereo", "c) Los Enanitos Verdes"], "respuesta": "b", "video": "videos/23w.mp4" },
+        { "opciones": ["a) Charly García", "b) Gustavo Cerati", "c) Fito Páez"], "respuesta": "b", "video": "videos/20n.mp4" },
+        { "opciones": ["a) Tiler Mack", "b) Harry Styles", "c) Robbie williams"], "respuesta": "c", "video": "videos/12n.mp4" },
+        { "opciones": ["a) Carlos Alberto García", "b) Carlos Alberto Gómez", "c) Carlos Alberto García Moreno"], "respuesta": "a", "video": "videos/22n.mp4" },
+        { "opciones": ["a) Virus", "b) Soda Stereo", "c) Los Enanitos Verdes"], "respuesta": "b", "video": "videos/23n.mp4" },
        // { "opciones": ["a) León Gieco", "b) Luis Alberto Spinetta", "c) Fito Páez"], "respuesta": "c", "video": "videos/.mp4" },//falta video
       //  { "opciones": ["a) Pappo", "b) Skay Beilinson", "c) Ricardo Iorio"], "respuesta": "a", "video": "videos/inter6.mp4" },//falta video
       //  { "opciones": ["a) Soda Stereo", "b) Patricio Rey y sus Redonditos de Ricota", "c) Los Ratones Paranoicos"], "respuesta": "a", "video": "videos/.mp4" },
@@ -27,13 +27,13 @@ const preguntas = {
       //  { "opciones": ["a) Ramos Mejía", "b) González Catán", "c) Isidro Casanova"], "respuesta": "b", "video": "videos/dificil1.mp4" },
       //  { "opciones": ["a) Bizarrap", "b) Wos", "c) Ecko"], "respuesta": "c", "video": "videos/dificil2.mp4" },
       //  { "opciones": ["a) Ecko", "b) L-Gante", "c) Bizarrap"], "respuesta": "b", "video": "videos/dificil3.mp4" },
-        { "opciones": ["a) David LC", "b) Walter 'Pocho' Calderón", "c) El Dipy"], "respuesta": "b", "video": "videos/43w.mp4" },
-        { "opciones": ["a) Ramos Mejía", "b) González Catán", "c) Isidro Casanova"], "respuesta": "b", "video": "videos/40w.mp4" },
+        { "opciones": ["a) David LC", "b) Walter 'Pocho' Calderón", "c) El Dipy"], "respuesta": "b", "video": "videos/43n.mp4" },
+        { "opciones": ["a) Ramos Mejía", "b) González Catán", "c) Isidro Casanova"], "respuesta": "b", "video": "videos/40n.mp4" },
       //  { "opciones": ["a) L-Gante", "b) KHEA", "c) Ecko"], "respuesta": "a", "video": "videos/.mp4" },
       //  { "opciones": ["a) Trueno", "b) Ysy A", "c) Duki"], "respuesta": "b", "video": "videos/dificil7.mp4" },
       //  { "opciones": ["a) C.R.O", "b) Lit Killah", "c) KHEA"], "respuesta": "a", "video": "videos/dificil8.mp4" },
-        { "opciones": ["a) Lit Killah", "b) Bizarrap", "c) Ecko"], "respuesta": "a", "video": "videos/44w.mp4" },
-        { "opciones": ["a) L-Gante", "b) KHEA", "c) Ecko"], "respuesta": "a", "video": "videos/45w.mp4" }
+        { "opciones": ["a) Lit Killah", "b) Bizarrap", "c) Ecko"], "respuesta": "a", "video": "videos/44n.mp4" },
+        { "opciones": ["a) L-Gante", "b) KHEA", "c) Ecko"], "respuesta": "a", "video": "videos/45n.mp4" }
     ]
 };
 
