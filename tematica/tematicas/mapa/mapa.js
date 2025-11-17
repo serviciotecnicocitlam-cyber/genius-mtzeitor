@@ -13,13 +13,13 @@ const preguntas = {
         { "opciones": ["a) San Justo", "b) Lomas del Mirador", "c) Ciudad Evita"], "respuesta": "c", "imagen": "imagenes/8.png", "video": "videos/1.mp4"  },
         { "opciones": ["a) Ramos Mejía", "b) San Justo", "c) Isidro Casanova"], "respuesta": "b", "imagen": "imagenes/9.png", "video": "videos/1.mp4"  },
         { "opciones": ["a) Villa Luzuriaga", "b) Lomas del Mirador", "c) Ciudad Evita"], "respuesta": "a", "imagen": "imagenes/10.png", "video": "videos/1.mp4"  },
-        { "opciones": ["a) Isidro Casanova", "b) Gregorio de Laferrere", "c) Rafael Castillo"], "respuesta": "a", "imagen": "imagenes/11.png", "video": "videos/1.mp4"  } //fijarse mapa que esta chico
+        { "opciones": ["a) Isidro Casanova", "b) Gregorio de Laferrere", "c) Rafael Castillo"], "respuesta": "a", "imagen": "imagenes/11t.png", "video": "videos/1.mp4"  } //fijarse mapa que esta chico
     ],
      "DIFICILES": [
-         { "opciones": ["a) Gregorio de Laferrere", "b) Rafael Castillo", "c) González Catán"], "respuesta": "b", "imagen": "imagenes/12.png", "video": "videos/1.mp4"  }, //fijarse mapa que esta chico
-         { "opciones": ["a) Gregorio de Laferrere", "b) Isidro Casanova", "c) Virrey del Pino"], "respuesta": "a", "imagen": "imagenes/13.png", "video": "videos/1.mp4"  }, //fijarse mapa que esta chico
-         { "opciones": ["a) Rafael Castillo", "b) Virrey del Pino", "c) González Catán"], "respuesta": "c", "imagen": "imagenes/14.png", "video": "videos/1.mp4"  }, //fijarse mapa que esta chico
-         { "opciones": ["a) Virrey del Pino", "b) Gregorio de Laferrere", "c) 20 de Junio"], "respuesta": "a", "imagen": "imagenes/15.png", "video": "videos/1.mp4"  }, //fijarse mapa que esta chico
+         { "opciones": ["a) Gregorio de Laferrere", "b) Rafael Castillo", "c) González Catán"], "respuesta": "b", "imagen": "imagenes/12t.png", "video": "videos/1.mp4"  }, //fijarse mapa que esta chico
+         { "opciones": ["a) Gregorio de Laferrere", "b) Isidro Casanova", "c) Virrey del Pino"], "respuesta": "a", "imagen": "imagenes/13t.png", "video": "videos/1.mp4"  }, //fijarse mapa que esta chico
+         { "opciones": ["a) Rafael Castillo", "b) Virrey del Pino", "c) González Catán"], "respuesta": "c", "imagen": "imagenes/14t.png", "video": "videos/1.mp4"  }, //fijarse mapa que esta chico
+         { "opciones": ["a) Virrey del Pino", "b) Gregorio de Laferrere", "c) 20 de Junio"], "respuesta": "a", "imagen": "imagenes/15t.png", "video": "videos/1.mp4"  }, //fijarse mapa que esta chico
          { "opciones": ["a) Aldo Bonzi", "b) Virrey del Pino", "c) 20 de Junio"], "respuesta": "c", "imagen": "imagenes/16.png", "video": "videos/1.mp4"  }
      ]
 };
