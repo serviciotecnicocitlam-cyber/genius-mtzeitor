@@ -17,8 +17,8 @@ const preguntas = {
     { "opciones": ["a) Ushuaia", "b) Río Gallegos", "c) Puerto Madryn"], "respuesta": "a", "video": "videos/13itn.mp4" },//revidasado
     { "opciones": ["a) La Revolución de Mayo", "b) La independencia de Argentina", "c) La creación de la Constitución"], "respuesta": "a", "video": "videos/14itn.mp4" },//revisado
     { "opciones": ["a) Julio Cortázar", "b) Jorge Luis Borges", "c) Adolfo Bioy Casares"], "respuesta": "a", "video": "videos/15itn.mp4" },//revisado
-    { "opciones": ["a) José de San Martín", "b) Manuel Belgrano", "c) Martin Miguel de Güemes "], "respuesta": "b", "video": "videos/16itn.mp4" },//revisado
-    { "opciones": ["a) Manuel Belgrano", "b) José de San Martín", "c) Juan Manuel de Rosas"], "respuesta": "b", "video": "videos/17itn.mp4" },//revisado
+    { "opciones": ["a) José de San Martín", "b) Manuel Belgrano", "c) Martin Miguel de Güemes "], "respuesta": "a", "video": "videos/16itn.mp4" },//revisado
+    { "opciones": ["a) Manuel Belgrano", "b) José de San Martín", "c) Juan Manuel de Rosas"], "respuesta": "a", "video": "videos/17itn.mp4" },//revisado
     { "opciones": ["a) Tucumán", "b) Salta", "c) Santiago del Estero"], "respuesta": "a", "video": "videos/tucumann.mp4" },//revisado
     { "opciones": ["a) Ruta Nacional Nº 9", "b) Ruta Nacional Nº 40", "c) Ruta Nacional Nº 3"], "respuesta": "b", "video": "videos/ruta9n.mp4" },//revisado
     { "opciones": ["a) Misiones", "b) Corrientes", "c) Chaco"], "respuesta": "a", "video": "videos/misionesn.mp4" }, //revisado
