@@ -51,7 +51,7 @@ let todasLasPreguntas = [];
 Object.values(preguntas).forEach(categoria => {
   todasLasPreguntas = todasLasPreguntas.concat(categoria);
 });
-miAudio.volume = 0.4;
+miAudio.volume = 0.35;
 mostrarPregunta();
 
 

@@ -37,7 +37,7 @@ let preguntasUsadas = [];
 
 // 🧩 Combinar todas las preguntas de todas las categorías
 const todasLasPreguntas = Object.values(preguntas).flat();
-miAudio.volume = 0.4;
+miAudio.volume = 0.35;
 // 🚀 Iniciar juego
 mostrarPregunta();
 

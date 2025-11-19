@@ -53,7 +53,7 @@ Object.values(preguntas).forEach(categoria => {
 });
 
 mostrarPregunta();
-miAudio.volume = 0.4;
+miAudio.volume = 0.35;
 
 function mostrarPregunta() {
   // ⚠️ Si ya respondió 6 o no quedan más preguntas → finalizar
