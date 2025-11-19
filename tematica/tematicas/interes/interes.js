@@ -1,6 +1,6 @@
 const preguntas = {
   "FACILES": [
-    { "opciones": ["a) Roma", "b) Madrid", "c) París"], "respuesta": "c", "video": "videos/1it.mp4" },//revisado 
+    { "opciones": ["a) Roma", "b) Madrid", "c) París"], "respuesta": "c", "video": "videos/1i.mp4" },//revisado 
     { "opciones": ["a) Emisiones de gases de efecto invernadero", "b) Erupciones volcánicas", "c) Rotación de la Tierra"], "respuesta": "a", "video": "videos/2it.mp4" },//revisado
     { "opciones": ["a) Rusia", "b) China", "c) Estados Unidos"], "respuesta": "a", "video": "videos/3it.mp4" },//revisado
     { "opciones": ["a) Energía solar", "b) Energía eólica", "c) Energía fósil"], "respuesta": "c", "video": "videos/4it.mp4" },//revisado
