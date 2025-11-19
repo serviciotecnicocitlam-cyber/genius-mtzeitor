@@ -5,7 +5,7 @@ const preguntas = {
     { "opciones": ["a) 1778", "b) 1850", "c) 1856"], "respuesta": "a", "video": "videos/18gf.mp4" },//chequeado
     { "opciones": ["a) De oeste a este", "b) De norte a sur", "c) De este a oeste"], "respuesta": "a", "video": "videos/20gf.mp4" },//chequeado
     { "opciones": ["a) Buenos Aires", "b) Córdoba", "c) Mendoza"], "respuesta": "a", "video": "videos/21gf.mp4" },//chequeado
-    { "opciones": ["a) 30", "b) entre 30 y 50", "c) 70"], "respuesta": "c", "video": "videos/4gf.mp4" },//chequeado
+    { "opciones": ["a) Menos de 30", "b) Entre 30 y 50", "c) Más de 70"], "respuesta": "c", "video": "videos/4gf.mp4" },//chequeado
     { "opciones": ["a) Solo nivel terciario", "b) NJivel universitario de grado y posgrado", "c) Solo educación secundaria"], "respuesta": "b", "video": "videos/17gf.mp4" } //chequeado
   ], 
   "INTERMEDIAS": [
@@ -13,13 +13,13 @@ const preguntas = {
     { "opciones": ["a) Buenos Aires", "b) Córdoba", "c) Mendoza"], "respuesta": "a", "video": "videos/21gf.mp4" }, //chequeado
     { "opciones": ["a) Buenos Aires", "b) La Plata", "c) Mar del Plata"], "respuesta": "b", "video": "videos/22gf.mp4" }, //chequeado
     { "opciones": ["a) Río Paraná", "b) Río Uruguay", "c) Océano Atlántico"], "respuesta": "c", "video": "videos/25.mp4" },//chequeado
-    { "opciones": ["a) CABA", "b) Bahia Blanca", "c) Lujan"], "respuesta": "a", "video": "videos/23gf.mp4" } //chequeado
+    { "opciones": ["a) CABA", "b) Bahia Blanca", "c) Luján"], "respuesta": "a", "video": "videos/23gf.mp4" } //chequeado
   ],
   "DIFICILES": [
     { "opciones": ["a) 5", "b) 14", "c) 25"], "respuesta": "b", "video": "videos/9gf.mp4" },//chequeado
     { "opciones": ["a) 1", "b) 2", "c) 3"], "respuesta": "c", "video": "videos/2gf.mp4" },//chequeado
     { "opciones": ["a) Lago Buenos Aires", "b) Lago Nahuel Huapi", "c) Lago Argentino"], "respuesta": "c", "video": "videos/3gf.mp4" },//chequeado
-    { "opciones": ["a) Erosion del suelo", "b) ContaminaciÓn del Rio Matanza Riachuelo", "c) Escasez de agua"], "respuesta": "b", "video": "videos/8gf.mp4" },//chequeado
+    { "opciones": ["a) Erosión del suelo", "b) Contaminación del Rio Matanza Riachuelo", "c) Escasez de agua"], "respuesta": "b", "video": "videos/8gf.mp4" },//chequeado
     { "opciones": ["a) San Justo", "b) González Catán", "c) Avellaneda"], "respuesta": "a", "video": "videos/5gf.mp4" } //chequeado
   ]
 };
