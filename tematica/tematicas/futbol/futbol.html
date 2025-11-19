@@ -9,10 +9,12 @@
     <script src="futbol.js" defer> </script>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
 </head>
-  
+
 <body>
+    <audio id="miAudio" autoplay loop>
+        <source src="../../../espera.audio.mp3" type="audio/mpeg">
+    </audio>
     <div class="juego">
-        
         <!-- Opciones dinámicas -->
         <div id="opciones"></div>
     </div>
@@ -20,7 +22,7 @@
     <video id="videopregunta" autoplay playsinline>
         <source src="" type="video/mp4" />
     </video>
-    
+
     <!-- Videos de respuesta correcta/incorrecta -->
     <video id="videofalse" class="op" style="display:none;">
         <source src="../../global/videos/respuesta incorrecta.mp4" type="video/mp4" />

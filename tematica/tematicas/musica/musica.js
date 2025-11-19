@@ -43,6 +43,7 @@ let aciertos = 0;
 const videoPregunta = document.getElementById('videopregunta');
 const videofalse = document.getElementById('videofalse');
 const videotrue = document.getElementById('videotrue');
+const miAudio = document.getElementById('miAudio');
 
 let preguntaActual = null;
 let preguntasUsadas = [];
@@ -52,7 +53,7 @@ let todasLasPreguntas = [];
 Object.values(preguntas).forEach(categoria => {
   todasLasPreguntas = todasLasPreguntas.concat(categoria);
 });
-
+miAudio.volume = 0.4;
 mostrarPregunta();
 
 function mostrarPregunta() {

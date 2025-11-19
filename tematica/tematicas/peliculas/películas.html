@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <audio id="miAudio" autoplay loop>
+        <source src="../../../espera.audio.mp3" type="audio/mpeg">
+    </audio>
     <div class="juego">
         <!-- Opciones dinámicas -->
         <div id="opciones"></div>
@@ -22,11 +25,11 @@
     </video>
 
     <!-- Videos de respuesta correcta/incorrecta -->
-    <video id="videofalse" class="op" style="display:none;" >
+    <video id="videofalse" class="op" style="display:none;">
         <source src="../../global/videos/respuesta incorrecta.mp4" type="video/mp4" />
         Tu navegador no soporta video.
     </video>
-    <video id="videotrue" class="op" style="display:none;" >
+    <video id="videotrue" class="op" style="display:none;">
         <source src="../../global/videos/respuesta correcta.mp4" type="video/mp4" />
         Tu navegador no soporta video.
     </video>

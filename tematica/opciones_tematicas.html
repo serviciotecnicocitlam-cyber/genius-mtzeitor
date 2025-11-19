@@ -20,6 +20,11 @@
     <!-- Espacio central (vacío, solo visual) -->
     <div class="center-space"></div>
 
+   <audio id="miAudio" autoplay loop>
+    <source src="../espera.audio.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
     <!-- Columna derecha -->
     <div class="column right">
       <a href="tematicas/videojuegos/videoJuegos.html"><button class="book-button btn5">Videojuegos</button></a>
@@ -28,5 +33,9 @@
       <a href="tematicas/mapa/mapa.html"><button class="book-button btn8">Mapa</button></a>
     </div>
   </div>
+  <script>
+    const miAudio = document.getElementById('miAudio');
+    miAudio.volume = 0.4;
+  </script>
 </body>
 </html>

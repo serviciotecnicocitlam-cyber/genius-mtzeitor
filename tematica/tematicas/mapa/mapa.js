@@ -31,13 +31,13 @@ const videoPregunta = document.getElementById('videopregunta');
 const imgPregunta = document.getElementById('imgpregunta');
 const videofalse = document.getElementById('videofalse');
 const videotrue = document.getElementById('videotrue');
-
+const miAudio = document.getElementById('miAudio');
 let preguntaActual = null;
 let preguntasUsadas = [];
 
 // 🧩 Combinar todas las preguntas de todas las categorías
 const todasLasPreguntas = Object.values(preguntas).flat();
-
+miAudio.volume = 0.4;
 // 🚀 Iniciar juego
 mostrarPregunta();
 

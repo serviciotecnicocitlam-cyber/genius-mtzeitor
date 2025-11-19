@@ -1,4 +1,4 @@
-const preguntas = { 
+const preguntas = {
   "FACILES": [                                              //SACANDO LAS 5 PREGUNTAS, FUTBOL YA ESTA TERMINADO
     { "opciones": ["a) Maracaná", "b) Morumbí", "c) Mineirao"], "respuesta": "a", "video": "videos/1.mp4" },//revisado
     { "opciones": ["a) 5", "b) 24", "c) 13"], "respuesta": "b", "video": "videos/2u.mp4" },//revisado
@@ -41,6 +41,7 @@ let aciertos = 0;
 const videoPregunta = document.getElementById('videopregunta');
 const videofalse = document.getElementById('videofalse');
 const videotrue = document.getElementById('videotrue');
+const miAudio = document.getElementById('miAudio');
 
 let preguntaActual = null;
 let preguntasUsadas = [];
@@ -52,6 +53,7 @@ Object.values(preguntas).forEach(categoria => {
 });
 
 mostrarPregunta();
+miAudio.volume = 0.4;
 
 function mostrarPregunta() {
   // ⚠️ Si ya respondió 6 o no quedan más preguntas → finalizar
